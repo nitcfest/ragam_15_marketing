@@ -39,7 +39,7 @@ a{
 	background-color: #ffffff;
 }
 #panel4{
-	background-color: yellow;
+	background-color: #ffffff;
 }
 /* Navigation Panel*/
 #nav-panel{
@@ -108,10 +108,57 @@ a{
 }
 .top-part-useless2{
 	width:100%;
-	height:30px;
+	height:50px;
 }
 .top-part-one{
 	width:100%;
 	height:20%;
-
+}
+.gal{
+	transform:scale(1);
+	transition:all .5s;
+	word-wrap: break-word;
+	margin:0% 0% 0% 3%;
+	padding:0px 0px 0px 0px;
+}
+.top-div{
+	width:100%;
+	height:47%;
+}
+#box1{
+	background-color: #000000;
+	color: #ffffff;
+	width:30%;
+	height:90%;
+	float:left;
+}
+#box2{
+	background-color: #cccccc;
+	width:30%;
+	height:90%;
+	float:left;
+}
+#box3{
+	background-color: #000000;
+	width:30%;
+	height:90%;
+	float:left;
+}
+#box4{
+	background-color: #cccccc;
+	width:30%;
+	height:90%;
+	float:left;
+}
+#box5{
+	background-color: #000000;
+	width:30%;
+	height:90%;
+	float:left;
+}
+#box6{
+	background-color: #cccccc;
+	width:30%;
+	height:90%;
+	float:left;
 }

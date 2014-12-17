@@ -25,8 +25,8 @@ var top_array=[];
 		})
 	}
 	$(document).bind('mousewheel DOMMouseScroll keydown',function(event){
-		event.preventDefault();
-		event.stopPropagation();
+		//event.preventDefault();
+		//event.stopPropagation();
 		if(animation_state==true)
 			return;
 	 	if (event.originalEvent.wheelDelta < 0||event.which==34||event.which==39||event.which==40) {
