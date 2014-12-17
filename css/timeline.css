@@ -1,0 +1,19 @@
+.line{
+	position: absolute;
+}
+#timeline_container{
+	width:100%;
+	height:100%;
+	position: absolute;
+	scale-x:;
+}
+.timeline_divs{
+	width:40px;
+	height:40px;
+	position: absolute;
+	background-color: black;
+	border-radius: 20px;
+	display: none;
+	-webkit-animation-duration: 2s;
+	z-index:10;
+}

@@ -3,6 +3,7 @@ var top_array=[];
 	var $html_body=$("html, body");
 	current_focus=0;
 	var animation_state=false;
+	var timeline_first_time=true;
 	var move_to_slide=function(slide){
 		$html_body.stop();
 		animation_state=true;
@@ -10,6 +11,10 @@ var top_array=[];
 		$html_body.animate({scrollTop: top_array[current_focus]},function(){animation_state=false;});
 		var animated_divs=$('.panel').eq(current_focus).find('.animated');
 		animated_divs.addClass(function(index){return animated_divs.eq(index).data('anim')||'zoomIn'});
+		if(timeline_first_time&&slide==1){
+			timeline_first_time=false;
+			draw_animated_lines(data);
+		}
 	}
 	var temp=0;
 	$(window).resize(function(){
