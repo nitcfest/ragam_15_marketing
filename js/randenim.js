@@ -8,7 +8,7 @@ var mkob=function(elem,i){
 				newleft=Math.random()*400>>0;
 				newtop=Math.random()*200>>0;
 				opacity=Math.random();
-				scale=.25+Math.random()*.75;
+				scale=.75+Math.random()*.25;
 				newwidth=elem.width()*scale;
 				newheight=elem.height()*scale;
 				elem.css('z-index',-1);
