@@ -52,3 +52,4 @@ var top_array=[];
 		}
 	})
 	calculate_top_array();
+	move_to_slide(0);

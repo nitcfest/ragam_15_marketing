@@ -104,6 +104,11 @@ var draw_animated_lines=function(data){
 }
 var w=$(document).width();
 var h=$(document).height();
-$(window).resize(function(){
-	$("#timeline_container").css({"transform":"scale("+$(document).width()/w+","+$(document).height()/h+")"})
-})
+// $(window).resize(function(){
+// 	$("#timeline_container").css({"transform":"scale("+$(document).width()/w+","+$(document).height()/h+")"})
+// })
+$(".timeline_detail_container").fadeOut();
+$(".timeline_divs").click(function(){
+	$(".timeline_detail_container").fadeOut();
+	$("#"+$(this).data("details-div")).fadeIn();
+});
