@@ -13,7 +13,7 @@ var drawline=function(start,type,length,time,div_to_show,callback_data){
 		width: 0+"px",
 		height:line_width+"px",
 		//position:'absolute',
-		backgroundColor: "red"
+		backgroundColor: "rgb(32,192,104)"
 		});
 		var left=length<0?(start.x+length):start.x;
 		if(callback_data){
@@ -31,7 +31,7 @@ var drawline=function(start,type,length,time,div_to_show,callback_data){
 		height: 0+"px",
 		width:line_width+"px",
 		//position:'absolute',
-		backgroundColor: "red"
+		backgroundColor: "rgb(32,192,104)"
 		});
 		var top=length<0?(start.y+length):start.y;
 		if(callback_data){

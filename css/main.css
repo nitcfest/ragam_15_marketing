@@ -22,7 +22,7 @@ a{
 	background-size:auto 100%;
 	background-repeat: no-repeat;
 	background-position: center;
-	/*background-image: url("../images/ragam_logo.jpg");*/
+	background-image: url("../images/ragambackg.png");
 }
 .panel{
 	width:100%;
@@ -33,7 +33,9 @@ a{
 	background-color: #ffffff;
 }
 #panel2{
-	background-color: #ffffff;
+	background:url("../images/gridme.png");
+	background-repeat: repeat;
+	/*background-color: #ffffff;*/
 }
 #panel3{
 	background-color: #ffffff;
