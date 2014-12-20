@@ -1,5 +1,5 @@
 var $timeline_container=$('#timeline_container');
-var line_width=4;
+var line_width=2;
 var timeline_speed=300;
 var drawline=function(start,type,length,time,div_to_show,callback_data){
   	var id ='c_'+new Date().getTime()
@@ -13,7 +13,7 @@ var drawline=function(start,type,length,time,div_to_show,callback_data){
 		width: 0+"px",
 		height:line_width+"px",
 		//position:'absolute',
-		backgroundColor: "red"
+		backgroundColor: "#20c068"
 		});
 		var left=length<0?(start.x+length):start.x;
 		if(callback_data){
@@ -31,7 +31,7 @@ var drawline=function(start,type,length,time,div_to_show,callback_data){
 		height: 0+"px",
 		width:line_width+"px",
 		//position:'absolute',
-		backgroundColor: "red"
+		backgroundColor: "#20c068"
 		});
 		var top=length<0?(start.y+length):start.y;
 		if(callback_data){

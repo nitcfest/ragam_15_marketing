@@ -10,7 +10,7 @@
 	width:40px;
 	height:40px;
 	position: absolute;
-	background-color: black;
+	background-color: #20c068;
 	border-radius: 20px;
 	display: none;
 	-webkit-transition:all .1s ease-in;
@@ -32,24 +32,38 @@
 #timeline_details{
 	position: relative;
 	width: 40%;
-	height:65%;
+	height:55%;
 	left:50%;
 	top:10%;
-	background-color: red;
+	background-image: url('../images/inremebrance.jpg');
 }
 .timeline_detail_container{
 	position: absolute;
 	width:100%;
-	background-color: yellow;
+	background-color: #20c068;
 	height:100%;
 	-webkit-animation:all 2s;
 	-moz-animation:all 2s;
 	-ms-animation:all 2s;
 	-o-animation:all 2s;
+	font-family: 'Roboto-Thin';
 }
 .timeline_text{
-	height:50%;
+	position: relative;
+	height:30%;
+	text-align: center;
+	font-size: 25px;
+	line-height: 20px;
 }
 .timeline_pic{
-	height:50%
+	height:50%;
+	font-family: 'Roboto-Regular';
+	text-align: center;
+}
+.vertical-align{
+	width: 100%;
+	height:35px;
+	position:absolute;
+	top:50%;
+	margin-top: -17px;
 }
