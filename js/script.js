@@ -34,11 +34,11 @@ var top_array=[];
 		//event.stopPropagation();
 		if(animation_state==true)
 			return;
-	 	if (event.originalEvent.wheelDelta < 0||event.which==34||event.which==39||event.which==40) {
+	 	if (event.originalEvent.wheelDelta < 0|| event.originalEvent.detail > 0||event.which==34||event.which==39||event.which==40) {
 			move_to_slide((current_focus+1)%elems);
 			return false;
 		}
-		else if (event.originalEvent.wheelDelta >= 0||event.which==33||event.which==37||event.which==38){
+		else if (event.originalEvent.wheelDelta >= 0||event.originalEvent.detail < 0||event.which==33||event.which==37||event.which==38){
 			move_to_slide(((current_focus-1)+elems)%elems);
 			return false;
 		}
