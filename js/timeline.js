@@ -100,6 +100,7 @@ var draw_animated_lines=function(data){
 		details[i-1].callback_data=details[i];
 	}
 	show_timeline_div(data.divs.eq(0),data.start.x,data.start.y);
+	handler=detail_changer();
 	drawline(data.start,details[0].type,details[0].line_length,details[0].time,details[0].div,details[0].callback_data);
 }
 var w=$(document).width();
@@ -107,8 +108,27 @@ var h=$(document).height();
 // $(window).resize(function(){
 // 	$("#timeline_container").css({"transform":"scale("+$(document).width()/w+","+$(document).height()/h+")"})
 // })
+var current_active_timeline=1;
+var total_timeline=$(".timeline_detail_container").length;
+var make_active=function(num){
+	$(".timeline_detail_container").fadeOut();
+	$("#timeline_detail"+num).fadeIn();
+}
 $(".timeline_detail_container").fadeOut();
 $(".timeline_divs").click(function(){
-	$(".timeline_detail_container").fadeOut();
-	$("#"+$(this).data("details-div")).fadeIn();
+	clearTimeout(handler);
+	current_active_timeline=$(this).data("details-div");
+	make_active(current_active_timeline);
+	handler=detail_changer();
 });
+var handler;
+var detail_changer=function(){
+	var timeout_handler=setTimeout(function(){
+		current_active_timeline=current_active_timeline+1;
+		if(current_active_timeline>total_timeline)
+			current_active_timeline=1;
+		make_active(current_active_timeline);
+		handler=detail_changer();
+	},3000);
+	return timeout_handler;
+}
