@@ -29,6 +29,14 @@
 	border-radius: 25px;
 	cursor:pointer;
 }
+.timeline_divs img{
+	padding-top: 3px;
+	padding-left: 5px;
+}
+.timeline_divs:hover img{
+	padding-top:6px;
+	padding-left:9px;
+}
 #timeline_details{
 	position: relative;
 	width: 40%;

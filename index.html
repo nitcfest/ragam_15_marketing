@@ -35,13 +35,25 @@
 		</div>
 		<div class="panel" id="panel2">
 			<div id="timeline_container">
-				<div class="timeline_divs" data-details-div="timeline_detail1"></div>
-				<div class="timeline_divs" data-details-div="timeline_detail2"></div>
-				<div class="timeline_divs" data-details-div="timeline_detail3"></div>
-				<div class="timeline_divs" data-details-div="timeline_detail4"></div>
-				<div class="timeline_divs" data-details-div="timeline_detail5"></div>
-				<div class="timeline_divs" data-details-div="timeline_detail6"></div>
-				<div class="timeline_divs" data-details-div="timeline_detail7"></div>
+				<div class="timeline_divs hastip3" data-details-div="timeline_detail1" title="In Remembrance">
+					<img src="images/idea-32.png">
+				</div>
+				<div class="timeline_divs hastip5" data-details-div="timeline_detail2" title="One Love One Heart">
+					<img src="images/favorite-2-32.png">
+				</div>
+				<div class="timeline_divs hastip" data-details-div="timeline_detail3" title="We are Contagious"></div>
+				<div class="timeline_divs hastip3" data-details-div="timeline_detail4" title="We at Ragam, make it big">
+					<img src="images/positive-dynamic-32.png">
+				</div>
+				<div class="timeline_divs hastip4" data-details-div="timeline_detail5" title="Events">
+					<img src="images/today-32.png">
+				</div>
+				<div class="timeline_divs hastip2" data-details-div="timeline_detail6"  title="Proshows">
+					<img src="images/guitar-32.png">
+				</div>
+				<div class="timeline_divs hastip2" data-details-div="timeline_detail7" title="We welcome everyone">
+					<img src="images/happy-32.png">
+				</div>
 			</div>
 			<div id="timeline_details">
 				<div id="timeline_detail1" class="timeline_detail_container">
@@ -166,7 +178,61 @@
 			<div id="n" class="animated" style="width:300px;height:300px;background-color:red;"></div>
 		</div>
 		<div class="panel" id="panel7">
-			<div id="n" class="animated" style="width:300px;height:300px;background-color:red;"></div>
+			<div class="bgtexture"></div>
+			<div class="top-part-useless2"></div>
+			<div class="heading">
+				<h1>Contact Us</h1>
+			</div>
+			<div class="contact-line">
+				<div class="contact-box">
+					<b>Marketing</b><br/>
+					Chrishtopher Jacob<br/>
+					+91 9846095751<br/>
+					christopher@ragam.org.in
+					
+				</div>
+				<div class="useless"></div>
+				<div class="contact-box">
+					<b>Marketing</b><br/>
+					Akhil Raj K<br/>
+					+91 9400792002<br/>
+					akhilraj@ragam.org.in
+					
+				</div>
+				<div class="useless"></div>
+				<div class="contact-box">
+					<b>Marketing</b><br/>
+					Nanda Gopal<br/>
+					+91 9497321312<br/>
+					nandagopal@ragam.org.in
+
+				</div>
+			</div>
+			<div class="contact-line">
+				<div class="contact-box">
+					<b>Gen- Sec</b><br/>
+					Dilber Shahul<br/>
+					+91 9567670916<br/>
+					dilber@ragam.org.in
+					
+				</div>
+				<div class="useless"></div>
+				<div class="contact-box">
+					<b>Cultural Sec</b><br/>
+					Abdul Wasih<br/>
+					+91 8547562834<br/>
+					wasih@ragam.org.in
+					
+				</div>
+				<div class="useless"></div>
+				<div class="contact-box">
+					<b>Events Co-ordinator</b><br/>
+					Hafiz Muhammed<br/>
+					+91 8089219732<br/>
+					hafiz@ragam.org.in
+					
+				</div>
+			</div>
 		</div>
 	</body>
 	<script src="js/jquery.js"></script>
@@ -174,4 +240,12 @@
 	<script src="js/script.js"></script>
 	<script src="js/randanim.js"></script>
 	<script src="js/timeline.js"></script>
+	<script src="js/tooltipsy.min.js"></script>
+	<script type="text/javascript">
+		$('.hastip').tooltipsy({offset: [0, 10]});
+		$('.hastip2').tooltipsy({offset: [0, -10]});
+		$('.hastip3').tooltipsy({offset: [10, 10]});
+		$('.hastip4').tooltipsy({offset: [10, -10]});
+		$('.hastip5').tooltipsy({offset: [-10, 10]});
+	</script>
 </html>
