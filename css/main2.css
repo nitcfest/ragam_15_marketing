@@ -1,0 +1,272 @@
+@font-face{
+font-family: 'Raleway-Light';
+src: url('../fonts/Raleway-Light.ttf');
+}
+
+@font-face{
+font-family: 'Roboto-Regular';
+src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face{
+font-family: 'Roboto-Thin';
+src: url('../fonts/Roboto-Thin.ttf');
+}
+
+@font-face{
+font-family: 'OpenSans-Light';
+src: url('../fonts/OpenSans-Light.ttf');
+}
+@font-face{
+font-family: 'helveticaneue-webfont';
+src: url('../fonts/helveticaneue-webfont.ttf');
+}
+
+body{
+	/*overflow: hidden;*/
+	margin: 0px;
+	padding: 0px;
+	background:#000000;
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+a{
+	color:#ffffff;
+	text-decoration: none;
+}
+#background{
+	position: fixed;
+	width:100%;
+	height:100%;
+	background-size:auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-image: url("../images/ragam_logo.jpg");*/
+}
+#background2{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-size:auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-image: url("../images/ragam_logo.jpg");*/
+}
+.panel{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+.panel h2 { 
+   position: absolute; 
+   top: 30%; 
+   width: 100%; 
+   text-align:center;
+   font-family:Roboto-Thin;
+   font-weight:normal;
+   font-size:50px;
+   color:#20c068;
+   -webkit-font-smoothing: antialiased;
+   text-shadow: -5px 0px #343946;
+}
+
+.mainlogo{
+   position: absolute; 
+   top: 43%; 
+   width:100%;
+   text-align:center;
+}
+
+.mainlogoimg{
+
+background:#20c068;
+text-align:center;
+}
+
+.logoimg-main{
+	width:80px;
+	height:80px;
+	background:#087945;
+	box-shadow:5px 5px 5px #000000;
+}
+.logoimg-main:hover{
+background:#fff;
+transition: all 0.8s ease;
+}
+
+/*#panel1{
+	background-color: #ffffff;
+}*/
+#panel2{
+	background-image: url('../images/bg.jpg');
+	background-size: 100%;
+}
+#panel3{
+	background-color: #ffffff;
+}
+#panel4{
+	background-color: #ffffff;
+}
+/* Navigation Panel*/
+#nav-panel{
+	width: 100%;
+	height:35px;
+	background-color: #000000;
+	color:#20c068;
+	position: fixed;
+	z-index: 1000;
+	border-bottom:1px solid #20c068;
+}
+.nav-panel-menus{
+	width: 14.2%;
+	height:100%;
+	text-align: center;
+	line-height: 35px;
+	font-family: 'Roboto-Thin';
+	font-size: 13px;
+	float: left;
+	color:#20c068;
+}
+.Ragam-Nav{
+	width:50px;
+	height:50px;
+	position:absolute;
+	border-bottom-right-radius:25px;
+	border-bottom-left-radius:25px;
+	left: 50%;
+	top:0%;
+	margin-left: -25px;
+	background-color: #000000;
+}
+#ragam-logo-nav{
+	width:48px;
+	height:48px;
+	border:1px solid #20c068;
+	border-radius:50px;
+	transition: all 0.8s ease;
+	background-color: #000000;
+}
+
+#ragam-logo-nav:hover{
+	border:1px solid #20c068;
+	background-color: #ffffff;
+}
+
+.left-30{
+	width:40%;
+	height: 100%;
+	float: left;
+}
+.right-70{
+	width: 56%;
+	height:100%;
+	float:left;
+}
+.left-40{
+	width:40%;
+	height: 100%;
+	float: left;
+	-webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.right-60{
+	width: 56%;
+	height:100%;
+	float:left;
+	padding:0px 0px 0px 20px;
+	font-family: 'Raleway-Light';
+	font-size: 25px;
+	line-height: 100px;
+	-webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.top-part-useless{
+	width:100%;
+	height:60px;
+}
+.top-part-useless2{
+	width:100%;
+	height:50px;
+}
+.top-part-one{
+	width:100%;
+	height:20%;
+}
+.gal{
+	transform:scale(1);
+	transition:all .5s;
+	word-wrap: break-word;
+	margin:0% 0% 0% 3%;
+	padding:0px 0px 0px 0px;
+}
+.top-div{
+	width:100%;
+	height:47%;
+}
+#box1{
+	background-color: #000000;
+	color: #ffffff;
+	width:30%;
+	height:90%;
+	float:left;
+}
+#box2{
+	background-color: #cccccc;
+	width:30%;
+	height:90%;
+	float:left;
+}
+#box3{
+	background-color: #000000;
+	width:30%;
+	height:90%;
+	float:left;
+}
+#box4{
+	background-color: #cccccc;
+	width:30%;
+	height:90%;
+	float:left;
+}
+#box5{
+	background-color: #000000;
+	width:30%;
+	height:90%;
+	float:left;
+}
+#box6{
+	background-color: #cccccc;
+	width:30%;
+	height:90%;
+	float:left;
+}
+/*************************************************Main navigation********************************************************/
+.main-link{
+	color:#20c068;
+	transition: all 0.8s ease;
+	font-size:17px;
+}
+
+
+.main-link:hover{
+	color:#fff;
+}
+/*********************************************main page***************************************************/
+.homebanner{
+width:100%;
+height:100%;
+}
+
+.hometitle{
+margin-top:38%;
+text-align:center;
+}
+
+.bgtexture{
+	position: absolute;
+	margin-top:35px;
+	width:100%;
+	height:100%;
+	background-image:url('../images/gridme.png');
+}
