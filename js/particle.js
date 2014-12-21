@@ -125,7 +125,7 @@ window.onload=function(){
 		mouse_point=new Vector(e.clientX,e.clientY);
 	})
 	var update_global_acceleration=function(){
-		global_acceleration=mouse_point.clone().sub(center).normalize().multiply_scalar(20);
+		global_acceleration=mouse_point.clone().sub(center).normalize().multiply_scalar(1);
 		//console.log(mouse_point.clone().sub(center));
 	}
 	global_acceleration=new Vector(1,1)
