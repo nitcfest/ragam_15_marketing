@@ -49,7 +49,7 @@ a{
 	position: fixed;
 	width:100%;
 	height:100%;
-	background-size:auto 100%;
+	background-size:100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	z-index:-1;
@@ -75,9 +75,12 @@ a{
 
 .mainlogo{
    position: absolute; 
-   top: 43%; 
-   width:100%;
-   text-align:center;
+   top: 47%; 
+   left: 50%;
+   width:80px;
+   height:80px;
+   margin-left:-40px;
+
 }
 
 .mainlogoimg{
@@ -106,10 +109,9 @@ transition: all 0.8s ease;
 }
 #panel4{
 }
-/*#panel7{
-	background-image: url('../images/bg.jpg');
-	background-size: 100%;
-}*/
+#panel7{
+	position: relative;
+}
 /* Navigation Panel*/
 #nav-panel{
 	width: 100%;
@@ -307,7 +309,7 @@ transition: all 0.8s ease;
 	height:100%;
 	top:0px;
 	opacity: 1;
-	background-size:auto 100%;
+	background-size:100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-image: url("../images/bg.png");
@@ -375,25 +377,7 @@ text-align:center;
         font-family: 'Roboto-Thin';
         font-size: 20px;
 }
-/*chart css*/
-.chart_link{
-	width:30%;
-	margin-top: 10px;
-	height:10%;
-	background-color: red;
-}
-#chart_show{
-	position: relative;
-	width: 40%;
-	height: 40%;
-	background-color: yellow;
-}
-.chart_container{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: green;
-    }
+
 /*********************************Previous Sponsors*********************************/
 .sponsor-list{
 	width:100%;
@@ -420,4 +404,138 @@ text-align:center;
 .break-point{
 	width:100%;
 	height:4%;
+}
+
+/***********************Chart*****************************/
+#chart_links_container{
+	width:30%;
+	height:70%;
+	float:left;
+}
+#chart_show{
+	position:relative;
+	margin-top: 10px;
+	width: 68%;
+	height:70%;
+	float:left;
+	/*background-color: yellow;*/
+}
+.chart_link{
+	width:200px;
+	margin: 10px 0px 0px 50px;
+	height:50px;
+	color: #20c068;
+	font-family: 'Raleway-Light';
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.chart_link:hover{
+	background-color: #20c068;
+	color: #000000;
+	transition: all 0.8s ease;
+}
+/*#chart_show{
+	position: relative;
+	width: 40%;
+	height: 40%;
+	
+}*/
+.chart_container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity:0.7;
+    }
+#chart_container1{
+	width: 68%;
+	height: 70%;
+}
+#chart_container2{
+	width: 68%;
+	height: 70%;
+}
+#chart_container3{
+	width: 68%;
+	height: 70%;
+}
+#chart_container4{
+	width: 68%;
+	height: 70%;
+}
+#chart_container5{
+	width: 68%;
+	height: 70%;
+}
+#chart_container6{
+	width: 68%;
+	height: 70%;
+}
+#chart_container7{
+	width: 68%;
+	height: 70%;
+}
+/******************************Social Icons*********************************************/
+.social-icons{
+	width: 400px;
+	height:100px;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	margin-left: -120px;
+}
+.icons-deta{
+	width:64px;
+	height:64px;
+	margin: 5px 5px 5px 10px;
+	float: left;
+}
+.icons-deta a{
+	width:100%;
+	height:100%;
+}
+.facebook{
+	background-image: url('../images/facebook-green.png');
+	background-size: 100%;
+}
+.facebook:hover{
+	background-image: url('../images/facebook.png');
+	background-size: 100%;
+	cursor: pointer;
+	transition: all 0.8s ease;
+}
+.twitter{
+	background-image: url('../images/twitter-green.png');
+	background-size: 100%;
+}
+.twitter:hover{
+	background-image: url('../images/twitter.png');
+	background-size: 100%;
+	cursor: pointer;
+	transition: all 0.8s ease;
+}
+.youtube{
+	background-image: url('../images/youtube-green.png');
+	background-size: 100%;
+}
+.youtube:hover{
+	background-image: url('../images/youtube.png');
+	background-size: 100%;
+	cursor: pointer;
+	transition: all 0.8s ease;
+}
+
+#footer{
+	width:100%;
+	height:25px;
+	text-align: center;
+	font-family: 'Raleway-Light';
+	background-color: #000000;
+	color:#ffffff;
+	position: absolute;
+	bottom: 0%;
+	font-size: 12px;
+	line-height: 25px;
+	color: #20c068;
 }
