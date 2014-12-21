@@ -54,7 +54,7 @@ var top_array=[];
 		}
 	})
 	calculate_top_array();
-	move_to_slide(4);
+	move_to_slide(0);
 	$(".chart_container").hide();
 	$(".chart_link").click(function(){
 		$(".chart_container").fadeOut();
