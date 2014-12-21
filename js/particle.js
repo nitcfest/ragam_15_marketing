@@ -84,7 +84,7 @@ window.onload=function(){
 	var clear=function(){
 		ctx.globalCompositeOperation="darker";
 		ctx.globalAlpha = 0.2;
-		ctx.fillStyle = "rgb(0,0,0)";
+		ctx.fillStyle = "#1A1919";
 		ctx.fillRect (box_limit_x_min,box_limit_y_min,box_limit_x_max,box_limit_y_max);
 		ctx.globalAlpha=1;
 	}
