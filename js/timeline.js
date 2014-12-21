@@ -119,7 +119,7 @@ $(".timeline_divs").click(function(){
 	clearTimeout(handler);
 	current_active_timeline=$(this).data("details-div");
 	make_active(current_active_timeline);
-	handler=detail_changer();
+	//handler=detail_changer();
 });
 var handler;
 var detail_changer=function(){
