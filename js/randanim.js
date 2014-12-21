@@ -27,7 +27,7 @@ var mkob=function(elem,i){
 				elem.css({'transform':'scale(1)'});
 				elem.css({'left':left+'px',
 							'top':top+'px',
-							'opacity':1,
+							'opacity':0.8,
 							'transform': 'scale('+1+')'
 							});
 
