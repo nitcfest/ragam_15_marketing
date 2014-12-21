@@ -357,12 +357,30 @@ text-align:center;
 	border:0px 0px 0px #2ADB7A;
 }
 /***Tool Tips***/
-.tooltipsy
-    {
+.tooltipsy    {
         padding: 0px;
         color: #20c068;
         font-family: 'Roboto-Thin';
         font-size: 20px;
+}
+/*chart css*/
+.chart_link{
+	width:30%;
+	margin-top: 10px;
+	height:10%;
+	background-color: red;
+}
+#chart_show{
+	position: relative;
+	width: 40%;
+	height: 40%;
+	background-color: yellow;
+}
+.chart_container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: green;
     }
 /*********************************Previous Sponsors*********************************/
 .sponsor-list{
