@@ -539,3 +539,17 @@ text-align:center;
 	line-height: 25px;
 	color: #20c068;
 }
+#preloader{
+	position: fixed;
+	z-index: 2000;
+	width: 100%;
+	height:100%;
+	background-color: black;
+	color: #20c068;
+	font-size: 40px;
+}
+#preloader_text{
+	position: absolute;
+	margin-top: 22%;
+	margin-left: 45%;
+}

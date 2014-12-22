@@ -63,3 +63,20 @@ var top_array=[];
 		$("#"+$(this).data("chart-target")).slideDown();
 	});
 	$(".chart_link").eq(0).trigger('click');
+	var preloader_text="Loading";
+	var preloader_limit=4;
+	var preloader_i=0;
+	var preloader_handler=setInterval(function(){
+		preloader_i++;
+		$("#preloader>#preloader_text").html(preloader_text);
+		if(preloader_i==preloader_limit){
+			preloader_text="Loading";
+			preloader_i=0;
+		}
+		else
+			preloader_text=preloader_text+".";
+	},500)
+	window.onload=function(){
+		$("#preloader").fadeOut();
+		move_to_slide(0);
+	}
