@@ -57,6 +57,9 @@ var top_array=[];
 	move_to_slide(0);
 	$(".chart_container").hide();
 	$(".chart_link").click(function(){
+		$(".chart_link").removeClass("selected");
+		$(this).addClass("selected");
 		$(".chart_container").fadeOut();
 		$("#"+$(this).data("chart-target")).slideDown();
 	});
+	$(".chart_link").eq(0).trigger('click');

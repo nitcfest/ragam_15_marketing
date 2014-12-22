@@ -430,11 +430,11 @@ text-align:center;
 	line-height: 50px;
 	cursor: pointer;
 	font-size: 20px;
-}
-.chart_link:hover{
-	background-color: #20c068;
-	color: #000000;
 	transition: all 0.8s ease;
+}
+.chart_link.selected{
+	background-color: #20c068 !important;
+	color: #000000 !important;
 }
 /*#chart_show{
 	position: relative;
