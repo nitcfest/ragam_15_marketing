@@ -18,13 +18,13 @@
 			<div class="bgtexture"></div>
 		</div>
 		<div id="nav-panel">
-				<div class="nav-panel-menus"><a class="main-link" href="#">History</a> </div>
-				<div class="nav-panel-menus"><a class="main-link" href="#">Ragam '14</a> </div>
-				<div class="nav-panel-menus"><a class="main-link" href="#">Ragam '15</a> </div>
+				<div class="nav-panel-menus"><a class="main-link" href="#panel1">Journey So Far</a> </div>
+				<div class="nav-panel-menus"><a class="main-link" href="#panel2">Ragam '14</a> </div>
+				<div class="nav-panel-menus"><a class="main-link" href="#panel3">Ragam '15</a> </div>
 				<div class="nav-panel-menus"></div>
-				<div class="nav-panel-menus"><a class="main-link" href="#">Why Sponsor Us</a> </div>
 				<div class="nav-panel-menus"><a class="main-link" href="#">Previous Sponsor</a> </div>
-				<div class="nav-panel-menus"><a class="main-link" href="#">Contact US</a> </div>
+				<div class="nav-panel-menus"><a class="main-link" href="#">Contact Us</a> </div>
+				<div class="nav-panel-menus"><a class="main-link" href="http://www.ragam.org.in/2014/">Ragam'14 Website</a> </div>
 				<div class="Ragam-Nav">
 					<a href="#panel1"><img id="ragam-logo-nav" src="images/logogreen.png"/></a>
 				</div>
@@ -32,7 +32,12 @@
 		<div class="panel" id="panel1">
 			<h2>RAGAM, THE JOURNEY SO FAR</h2>
 			<div class="mainlogo">
-				<a href="#"><p><img src="images/logomain.png" class="logoimg-main"></p></a>
+				<a href="#"><img src="images/logomain.png" class="logoimg-main"></a>
+			</div>
+			<div class="social-icons">
+				<div class="icons-deta facebook"><a href="https://www.facebook.com/Ragam.nitc" target="_blank"><img src="images/plain.png"></a></div>
+				<div class="icons-deta twitter"><a href="https://twitter.com/ragamnitc" target="_blank"><img src="images/plain.png" ></a></div>
+				<div class="icons-deta youtube"><a href="https://www.youtube.com/user/RagamCulfest" target="_blank"><img src="images/plain.png"></a></div>
 			</div>
 		</div>
 		<div class="panel" id="panel2">
@@ -256,17 +261,23 @@
 			<div class="heading">
 				<h1>Ragam'15 Predictions </h1>
 			</div>
-			<div class="chart_link" data-chart-target="chart_container1"></div>
-			<div class="chart_link" data-chart-target="chart_container2"></div>
-			<div class="chart_link" data-chart-target="chart_container3"></div>
-			<div class="chart_link" data-chart-target="chart_container4"></div>
-			<div class="chart_link" data-chart-target="chart_container5"></div>
+			<div id="chart_links_container">
+				<div class="chart_link" data-chart-target="chart_container1">Footfall</div>
+				<div class="chart_link" data-chart-target="chart_container2">Participation</div>
+				<div class="chart_link" data-chart-target="chart_container3">Online Reach</div>
+				<div class="chart_link" data-chart-target="chart_container4">Visibility</div>
+				<div class="chart_link" data-chart-target="chart_container5">Proshows</div>
+				<div class="chart_link" data-chart-target="chart_container6">Online Likes</div>
+				<div class="chart_link" data-chart-target="chart_container7">Celebrity Value</div>
+			</div>			
 			<div id="chart_show">
 				<div class="chart_container" id="chart_container1"></div>
 				<div class="chart_container" id="chart_container2"></div>
 				<div class="chart_container" id="chart_container3"></div>
 				<div class="chart_container" id="chart_container4"></div>
 				<div class="chart_container" id="chart_container5"></div>
+				<div class="chart_container" id="chart_container6"></div>
+				<div class="chart_container" id="chart_container7"></div>
 			</div>
 		</div>
 		<div class="panel" id="panel6">
@@ -408,6 +419,9 @@
 					
 				</div>
 			</div>
+			<div id="footer">
+				&copy; Creative Minds @ NITC
+			</div>
 		</div>
 	</body>
 	<script src="js/jquery.js"></script>
@@ -418,6 +432,10 @@
 	<script src="js/particle.js"></script>
 	<script src="js/vector.js"></script>
 	<script src="js/tooltipsy.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/modules/exporting.js"></script>
+	<script src="js/themes/gray.js"></script>
+	<script src="js/chart.js"></script>
 	<script type="text/javascript">
 		$('.hastip').tooltipsy({offset: [0, 10]});
 		$('.hastip2').tooltipsy({offset: [0, -10]});
