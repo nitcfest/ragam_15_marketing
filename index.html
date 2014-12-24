@@ -1,8 +1,11 @@
-<html>
+<!-- Space for <!doctype html> -->
+<html lang="en" prefix="og: http://ogp.me/ns#">
 	<head>
+		<meta charset="utf-8"/>
+
 		<title>Ragam '15</title>
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="css/animate.css" type="text/css">
+		<link rel="stylesheet" href="css/animate.css" type="text/css"/>
 		<link rel="stylesheet" href="css/main.css" type="text/css"/>
 		<link rel="stylesheet" href="css/timeline.css" type="text/css"/>
 		<link rel="stylesheet" href="css/particle.css" type="text/css"/>
@@ -10,7 +13,26 @@
 
 		<!-- Favicons -->
 		<link rel="icon" href="images/nav.png" type="image/png"/>
-		<!-- Meta Properties -->
+		<link rel="shortcut icon" href="images/nav.png" type="image/png"/>
+
+
+		<!-- Properties -->
+		
+		<!-- TODO This description shows up on Google search. -->
+		<meta name="description" content=""/>
+		<link rel="canonical" href="http://www.ragam.org.in/2015/marketing">
+		<!-- TODO This data is pulled by Facebook when shared.
+			 og:image or image_src will be the image shown.
+			 Description can be same as the meta description.
+			 Make sure the url is correct.
+		 -->
+		<link rel="image_src" href="images/ragam_logo.jpg">
+		<meta property="og:title" content="Ragam '15">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="images/ragam_logo.jpg">
+		<meta property="og:url" content="http://www.ragam.org.in/2015/marketing">
+		<!-- TODO  -->
+		<meta property="og:description" content="">
 	</head>
 	<body>
 		<div id="preloader"><div id="preloader_text">Loading</div></div>
@@ -424,7 +446,7 @@
 				&copy; Creative Minds @ NITC
 			</div>
 		</div>
-	</body>
+
 	<script src="js/jquery.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/randanim.js"></script>
@@ -442,4 +464,5 @@
 		$('.hastip5').tooltipsy({offset: [-10, 10]});
 		$('.hastipnew').tooltipsy({offset: [0, 10]});
 	</script>
+	</body>
 </html>
