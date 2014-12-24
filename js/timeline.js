@@ -47,35 +47,35 @@ var timeline_container_width=$timeline_container.width();
 var timeline_container_height=$timeline_container.height();
 
 var data={
-	start:{x:50,y:70},
+	start:{x:6,y:85},
 	details:[{
 		type:'horizontal',
-		line_length:30,
-		time:.5
-	},
-	{
-		type:'vertical',
-		line_length:40,
+		line_length:15,
 		time:.5
 	},
 	{
 		type:'horizontal',
-		line_length:-30,
-		time:.5
-	},
-	{
-		type:'vertical',
-		line_length:40,
+		line_length:15,
 		time:.5
 	},
 	{
 		type:'horizontal',
-		line_length:35,
+		line_length:15,
 		time:.5
 	},
 	{
 		type:'horizontal',
-		line_length:35,
+		line_length:15,
+		time:.5
+	},
+	{
+		type:'horizontal',
+		line_length:15,
+		time:.5
+	},
+	{
+		type:'horizontal',
+		line_length:15,
 		time:.5
 	}],
 	divs:$(".timeline_divs"),
@@ -99,6 +99,8 @@ var draw_animated_lines=function(data){
 	for(i=1;i<details.length;i++){
 		details[i-1].callback_data=details[i];
 	}
+	data.start.x*=(timeline_container_width/100);
+	data.start.y*=(timeline_container_height/100);
 	show_timeline_div(data.divs.eq(0),data.start.x,data.start.y);
 	handler=detail_changer();
 	drawline(data.start,details[0].type,details[0].line_length,details[0].time,details[0].div,details[0].callback_data);
