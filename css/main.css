@@ -42,7 +42,7 @@ a{
 	background-size:100%;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url("../images/bg.png");
+	background-image: url("../images/bg.jpg");
 	z-index:-1;
 }
 #background2{
@@ -312,7 +312,7 @@ transition: all 0.8s ease;
 	background-size:100%;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url("../images/bg.png");
+	background-image: url("../images/bg.jpg");
 	z-index:-1;
 }
 .homebanner{
