@@ -325,11 +325,12 @@ margin-top:38%;
 text-align:center;
 }
 
-.bgtexture{
+#bgtexture{
 	position: absolute;
 	margin-top:35px;
 	width:100%;
 	height:100%;
+	background-position: 0px 0px;
 	background-image:url('../images/gridme.png');
 }
 

@@ -80,3 +80,7 @@ var top_array=[];
 		$("#preloader").fadeOut();
 		move_to_slide(0);
 	}
+	$(document).mousemove(function(event){
+		console.log(event.pageX);
+		$("#bgtexture").css({"background-position": event.pageX/80+"px "+ event.pageY/80+"px"});
+	})
