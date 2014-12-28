@@ -82,5 +82,5 @@ var top_array=[];
 	}
 	$(document).mousemove(function(event){
 		console.log(event.pageX);
-		$("#bgtexture").css({"background-position": event.pageX/80+"px "+ event.pageY/80+"px"});
+		$("#bgtexture").css({"background-position": -event.pageX/80+"px "+ -event.pageY/80+"px"});
 	})
