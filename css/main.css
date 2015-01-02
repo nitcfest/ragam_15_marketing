@@ -344,6 +344,11 @@ text-align:center;
 	margin:0px;
 	text-align: center;
 }
+.contact-container{
+	width:1050px;
+	height: 100%;
+	margin: 0px auto;
+}
 .contact-line{
 	width:100%;
 	height:40%;
