@@ -67,7 +67,7 @@ a{
    text-align:center;
    font-family:Roboto-Thin;
    font-weight:normal;
-   font-size:50px;
+   font-size:60px;
    color:#20c068;
    -webkit-font-smoothing: antialiased;
    text-shadow: -5px 0px #343946;
@@ -553,4 +553,13 @@ text-align:center;
 	position: absolute;
 	margin-top: 22%;
 	margin-left: 45%;
+}
+#panel4_background{
+	position: absolute;
+	background: url('a');
+	width:100%;
+	height: 100%;
+}
+#preload1{
+	background: url("")
 }
