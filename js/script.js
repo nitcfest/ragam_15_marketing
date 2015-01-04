@@ -85,7 +85,7 @@ var top_array=[];
 	$(document).mousemove(function(event){
 		$bgtexture.css({"background-position": -event.pageX/160+"px "+ -event.pageY/160+"px"});
 	});
-	$panel4_background=$("#panel4_background");
-	$(".gal").click(function(){
-		$panel4_background.css({"background":"url('"+$(this).data('bg')+"')"});
+	$background_panel4=$("#background_panel4");
+	$(".gal").hover(function(){
+		$background_panel4.css({"background":"url('"+$(this).data('bg')+"')"});
 	})
