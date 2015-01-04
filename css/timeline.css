@@ -39,17 +39,16 @@
 }
 #timeline_details{
 	position: relative;
-	width: 40%;
+	width: 60%;
 	height:55%;
-	left:30%;
+	left:22%;
 	top:10%;
-	background-image: url('../images/inremebrance.jpg');
 	background-repeat: no-repeat;
 }
 .timeline_detail_container{
 	position: absolute;
 	width:100%;
-	background-color: #20c068;
+	color: #20c068;
 	height:100%;
 	-webkit-animation:all 2s;
 	-moz-animation:all 2s;
@@ -59,15 +58,17 @@
 }
 .timeline_text{
 	position: relative;
-	height:30%;
-	text-align: center;
+	height:100%;
+	float: left;
+	width: 50%;
 	font-size: 25px;
 	line-height: 20px;
 }
 .timeline_pic{
-	height:50%;
+	height:100%;
+	float: left;
+	width: 50%;
 	font-family: 'Roboto-Regular';
-	text-align: center;
 }
 .vertical-align{
 	width: 100%;

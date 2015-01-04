@@ -87,6 +87,7 @@ var show_timeline_div=function(div_to_show,start_x,start_y){
 	div_to_show.addClass("animated bounceIn");
 }
 var draw_animated_lines=function(data){
+	make_active(1);
 	var details=data.details;
 	var build=details[0];
 	for(i=0;i<details.length;i++){
