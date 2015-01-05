@@ -100,7 +100,7 @@ var top_array=[];
 	$background_panel3=$("#background_panel3");
 	$background_panel4=$("#background_panel4");
 	$("#panel3 .gal").hover(function(){
-		$background_panel3.css({"background":"url('"+$(this).data('bg')+"')","background-size":"100%","background-repeat":"no-repeat"});
+		$background_panel3.css({"background":"url('"+$(this).data('bg')+"') no-repeat center center fixed","-webkit-background-size":"cover","background-repeat":"no-repeat"});
 	})
 	$("#panel4 .gal").hover(function(){
 		$background_panel4.css({"background":"url('"+$(this).data('bg')+"')","background-size":"100%","background-repeat":"no-repeat"});

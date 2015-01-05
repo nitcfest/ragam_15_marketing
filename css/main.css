@@ -344,11 +344,9 @@ transition: all 0.8s ease;
 	transition: all 0.8s ease;
 	font-size:17px;
 }
-
-
 .main-link:hover{
-	color:#fff;
-	cursor: pointer;
+	color:#fff !important; 
+	cursor: pointer !important;
 }
 /*********************************************main page***************************************************/
 #bg{
