@@ -86,6 +86,8 @@ var top_array=[];
 		$bgtexture.css({"background-position": -event.pageX/160+"px "+ -event.pageY/160+"px"});
 	});
 	$background_panel4=$("#background_panel4");
+	$background_panel5=$("#background_panel5");
 	$(".gal").hover(function(){
-		$background_panel4.css({"background":"url('"+$(this).data('bg')+"')"});
+		$background_panel4.css({"background":"url('"+$(this).data('bg')+"')","background-size":"100%","background-repeat":"no-repeat"});
+		$background_panel5.css({"background":"url('"+$(this).data('bg')+"')","background-size":"100%","background-repeat":"no-repeat"});
 	})
