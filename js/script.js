@@ -78,9 +78,14 @@ var top_array=[];
 	},500)
 	window.onload=function(){
 		$("#preloader").fadeOut();
+		clearInterval(preloader_handler);
 		move_to_slide(0);
 	}
+	$bgtexture=$("#bgtexture")
 	$(document).mousemove(function(event){
-		console.log(event.pageX);
-		$("#bgtexture").css({"background-position": -event.pageX/120+"px "});
+		$bgtexture.css({"background-position": -event.pageX/160+"px "+ -event.pageY/160+"px"});
+	});
+	$background_panel4=$("#background_panel4");
+	$(".gal").hover(function(){
+		$background_panel4.css({"background":"url('"+$(this).data('bg')+"')"});
 	})
