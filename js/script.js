@@ -62,7 +62,12 @@ var top_array=[];
 		$(".chart_container").fadeOut();
 		$("#"+$(this).data("chart-target")).slideDown();
 	});
-	$(".chart_link").eq(0).trigger('click');
+	/*Tweak for fixing the overflow of charts from the container.
+		NO IDEA WHY THE FOLLOWING CODE WORKS ..BUT IT WORKS*/
+	for(i=0;i<$(".chart_link").length;i++){
+		$(".chart_link").eq(i).trigger('click');
+	}
+		$(".chart_link").eq(0).trigger('click');
 	var preloader_text="Loading";
 	var preloader_limit=4;
 	var preloader_i=0;
