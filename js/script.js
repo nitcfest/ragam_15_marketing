@@ -5,11 +5,17 @@ var top_array=[];
 	var animation_state=false;
 	var timeline_first_time=true;
 	$links=$(".main-link");
+	$background_panel3=$("#background_panel3");
+	$background_panel4=$("#background_panel4");
 	var move_to_slide=function(slide){
 		$links.css({"color":"#20c068"});
 		//special case for ragam14 link with 2 slides
 		if(slide==3){
 			$(".main-link[data-slide-num='"+2+"']").css({"color":"white"});
+		}
+		if(slide==2||slide==3){
+			$background_panel3.css({"background":""});
+			$background_panel4.css({"background":""});
 		}
 		$(".main-link[data-slide-num='"+slide+"']").css({"color":"white"});
 		$html_body.stop();
@@ -97,8 +103,6 @@ var top_array=[];
 	$(document).mousemove(function(event){
 		$bgtexture.css({"background-position": -event.pageX/160+"px "+ -event.pageY/160+"px"});
 	});
-	$background_panel3=$("#background_panel3");
-	$background_panel4=$("#background_panel4");
 	$("#panel3 .gal").hover(function(){
 		$background_panel3.css({"background":"url('"+$(this).data('bg')+"') no-repeat center center fixed","-webkit-background-size":"cover","-moz-background-size":"cover","-o-background-size":"cover","background-size":"cover"});
 	})
