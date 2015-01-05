@@ -11,6 +11,9 @@
 	height:40px;
 	position: absolute;
 	background-color: #20c068;
+	background-size:80%;
+	background-position: center;
+	background-repeat:no-repeat;
 	border-radius: 20px;
 	display: none;
 	-webkit-transition:all .1s ease-in;
