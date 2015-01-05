@@ -611,3 +611,25 @@ text-align:center;
 .Ragam-Nav>a:hover{
 	cursor: pointer;
 }
+
+/*********************************** Arrow Indicator *****************************************/
+.arrow-indicator{
+	width:100px;
+	height:100px;
+	position: absolute;
+	background-image: url('../images/arrow.png');
+	background-repeat: no-repeat;
+	background-size: 60% 60%;
+	bottom: 0px;
+	right:0px;
+}
+.arrow-indicator-text{
+	width:110px;
+	height:30px;
+	position: absolute;
+	font-family: 'Raleway-Light';
+	line-height: 25px;
+	color:#20c068;
+	bottom: 100px;
+	right:0px;
+}
