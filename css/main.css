@@ -581,14 +581,13 @@ text-align:center;
 	width: 100%;
 	height:100%;
 	background-color: black;
+	background-image: url("../images/preloader.gif");
+	background-repeat:no-repeat;
+	background-position: center;
 	color: #20c068;
 	font-size: 40px;
 }
-#preloader_text{
-	position: absolute;
-	margin-top: 22%;
-	margin-left: 45%;
-}
+
 #preload1{
 	background: url("");
 }
