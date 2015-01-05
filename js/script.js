@@ -4,7 +4,10 @@ var top_array=[];
 	current_focus=0;
 	var animation_state=false;
 	var timeline_first_time=true;
+	$links=$(".main-link");
 	var move_to_slide=function(slide){
+		$links.css({"color":"#20c068"});
+		$(".main-link[data-slide-num='"+slide+"']").css({"color":"white"});
 		$html_body.stop();
 		animation_state=true;
 		current_focus=slide;
@@ -88,4 +91,7 @@ var top_array=[];
 	$(document).mousemove(function(event){
 		console.log(event.pageX);
 		$("#bgtexture").css({"background-position": -event.pageX/120+"px "});
+	})
+	$links.click(function(){
+		move_to_slide($(this).data('slide-num'));
 	})
