@@ -4,7 +4,10 @@ var top_array=[];
 	current_focus=0;
 	var animation_state=false;
 	var timeline_first_time=true;
+	$links=$(".main-link");
 	var move_to_slide=function(slide){
+		$links.css({"color":"#20c068"});
+		$(".main-link[data-slide-num='"+slide+"']").css({"color":"white"});
 		$html_body.stop();
 		animation_state=true;
 		current_focus=slide;
@@ -62,7 +65,12 @@ var top_array=[];
 		$(".chart_container").fadeOut();
 		$("#"+$(this).data("chart-target")).slideDown();
 	});
-	$(".chart_link").eq(0).trigger('click');
+	/*Tweak for fixing the overflow of charts from the container.
+		NO IDEA WHY THE FOLLOWING CODE WORKS ..BUT IT WORKS*/
+	for(i=0;i<$(".chart_link").length;i++){
+		$(".chart_link").eq(i).trigger('click');
+	}
+		$(".chart_link").eq(0).trigger('click');
 	var preloader_text="Loading";
 	var preloader_limit=4;
 	var preloader_i=0;
@@ -90,4 +98,7 @@ var top_array=[];
 	$(".gal").hover(function(){
 		$background_panel4.css({"background":"url('"+$(this).data('bg')+"')","background-size":"100%","background-repeat":"no-repeat"});
 		$background_panel5.css({"background":"url('"+$(this).data('bg')+"')","background-size":"100%","background-repeat":"no-repeat"});
+	})
+	$links.click(function(){
+		move_to_slide($(this).data('slide-num'));
 	})

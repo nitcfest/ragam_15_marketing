@@ -46,16 +46,16 @@
 			<div id="bgtexture"></div>
 		</div>
 		<div id="nav-panel">
-				<div class="nav-panel-menus"><a class="main-link" href="#panel1" onclick="move_to_slide(3);return false;">Journey So Far</a> </div>
-				<div class="nav-panel-menus"><a class="main-link" href="#panel2">Ragam '14</a> </div>
-				<div class="nav-panel-menus"><a class="main-link" href="#panel3">Ragam '15</a> </div>
-				<div class="nav-panel-menus"></div>
-				<div class="nav-panel-menus"><a class="main-link" href="#panel4">Previous Sponsor</a> </div>
-				<div class="nav-panel-menus"><a class="main-link" href="#panel5">Contact Us</a> </div>
-				<div class="nav-panel-menus"><a class="main-link" href="http://www.ragam.org.in/2014/">Ragam'14 Website</a> </div>
-				<div class="Ragam-Nav">
-					<a href="#panel1"><img id="ragam-logo-nav" src="images/logogreen.png"/></a>
-				</div>
+			<div class="nav-panel-menus"><a class="main-link" data-slide-num='1'>Journey So Far</a> </div>
+			<div class="nav-panel-menus"><a class="main-link" data-slide-num='2'>Ragam '14</a> </div>
+			<div class="nav-panel-menus"><a class="main-link" data-slide-num='4'>Ragam '15</a> </div>
+			<div class="nav-panel-menus"></div>
+			<div class="nav-panel-menus"><a class="main-link" data-slide-num='5'>Previous Sponsor</a> </div>
+			<div class="nav-panel-menus"><a class="main-link" data-slide-num='6'>Contact Us</a> </div>
+			<div class="nav-panel-menus"><a class="main-link" href="http://www.ragam.org.in">Ragam'14 Website</a> </div>
+			<div class="Ragam-Nav">
+				<a class="main-link" data-slide-num='0'><img id="ragam-logo-nav" src="images/logogreen.png"/></a>
+			</div>
 		</div>
 		<div class="panel" id="panel1">
 			<h2>RAGAM, THE JOURNEY SO FAR</h2>
@@ -63,9 +63,9 @@
 				<a href="#"><img src="images/logomain.png" class="logoimg-main"></a>
 			</div>
 			<div class="social-icons">
-				<div class="icons-deta facebook"><a href="https://www.facebook.com/Ragam.nitc" target="_blank"><img src="images/plain.png"></a></div>
-				<div class="icons-deta twitter"><a href="https://twitter.com/ragamnitc" target="_blank"><img src="images/plain.png" ></a></div>
-				<div class="icons-deta youtube"><a href="https://www.youtube.com/user/RagamCulfest" target="_blank"><img src="images/plain.png"></a></div>
+				<div class="icons-deta facebook"><a href="https://www.facebook.com/Ragam.nitc" target="_blank"></a></div>
+				<div class="icons-deta twitter"><a href="https://twitter.com/ragamnitc" target="_blank"></a></div>
+				<div class="icons-deta youtube"><a href="https://www.youtube.com/user/RagamCulfest" target="_blank"></a></div>
 			</div>
 		</div>
 		<div class="panel" id="panel2">
@@ -484,6 +484,7 @@
 		</div>
 
 	<script src="js/jquery.js"></script>
+	<script src="js/chart.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/randanim.js"></script>
 	<script src="js/timeline.js"></script>
@@ -491,7 +492,6 @@
 	<script src="js/highcharts.js"></script>
 	<script src="js/modules/exporting.js"></script>
 	<script src="js/themes/gray.js"></script>
-	<script src="js/chart.js"></script>
 	<script type="text/javascript">
 		$('.hastip').tooltipsy({offset: [-100, 10]});
 		$('.hastip2').tooltipsy({offset: [0, -10]});
