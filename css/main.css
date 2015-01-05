@@ -489,34 +489,31 @@ text-align:center;
 	height:100%;
 }
 .facebook{
-	background-image: url('../images/facebook-green.png');
-	background-size: 100%;
+	background-image: url('../images/facebook-sprite.png');
+	background-size: 200%;
+	background-position: 100% 0%;
 }
 .facebook:hover{
-	background-image: url('../images/facebook.png');
-	background-size: 100%;
 	cursor: pointer;
-	transition: all 0.8s ease;
+	background-position: 0% 0%;
 }
 .twitter{
-	background-image: url('../images/twitter-green.png');
-	background-size: 100%;
+	background-image: url('../images/twitter-sprite.png');
+	background-size: 200%;
+	background-position: 100% 0%;
 }
 .twitter:hover{
-	background-image: url('../images/twitter.png');
-	background-size: 100%;
 	cursor: pointer;
-	transition: all 0.8s ease;
+	background-position: 0% 0%;
 }
 .youtube{
-	background-image: url('../images/youtube-green.png');
-	background-size: 100%;
+	background-image: url('../images/youtube-sprite.png');
+	background-size: 200%;
+	background-position: 100% 0%;
 }
 .youtube:hover{
-	background-image: url('../images/youtube.png');
-	background-size: 100%;
 	cursor: pointer;
-	transition: all 0.8s ease;
+	background-position: 0% 0%;
 }
 
 #footer{
