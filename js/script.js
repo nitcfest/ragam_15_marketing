@@ -7,6 +7,10 @@ var top_array=[];
 	$links=$(".main-link");
 	var move_to_slide=function(slide){
 		$links.css({"color":"#20c068"});
+		//special case for ragam14 link with 2 slides
+		if(slide==3){
+			$(".main-link[data-slide-num='"+2+"']").css({"color":"white"});
+		}
 		$(".main-link[data-slide-num='"+slide+"']").css({"color":"white"});
 		$html_body.stop();
 		animation_state=true;
