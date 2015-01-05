@@ -47,7 +47,7 @@ var timeline_container_width=$timeline_container.width();
 var timeline_container_height=$timeline_container.height();
 
 var data={
-	start:{x:6,y:85},
+	start:{x:6,y:75},
 	details:[{
 		type:'horizontal',
 		line_length:15,
