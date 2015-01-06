@@ -1,6 +1,6 @@
 var $timeline_container=$('#timeline_container');
 var line_width=2;
-var timeline_speed=300;
+var timeline_speed=80;
 var drawline=function(start,type,length,time,div_to_show,callback_data){
   	var id ='c_'+new Date().getTime()
   	var line = "<div id='"+id+"'class='line'>&nbsp;</div>";
@@ -132,6 +132,6 @@ var detail_changer=function(){
 			current_active_timeline=1;
 		make_active(current_active_timeline);
 		handler=detail_changer();
-	},3000);
+	},2500);
 	return timeout_handler;
 }

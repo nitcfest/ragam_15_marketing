@@ -595,7 +595,6 @@ text-align:center;
 	width:100%;
 	height:100%;
 	position:absolute;
-	transition:all 1s ease;
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
@@ -603,7 +602,6 @@ text-align:center;
 	width:100%;
 	height:100%;
 	position:absolute;
-	transition:all 1s ease;
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
