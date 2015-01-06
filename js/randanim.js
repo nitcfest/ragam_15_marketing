@@ -11,24 +11,47 @@ var mkob=function(elem,i){
 				scale=.55+Math.random()*.25;
 				newwidth=elem.width()*scale;
 				newheight=elem.height()*scale;
-				elem.css('z-index',-1);
+				//elem.css('z-index',-1);
 				elem.stop();
 				elem.css({'left':newleft+'px',
 							'top':newtop+'px',
 							'opacity':opacity/3+.2,
-							'transform': 'scale('+scale+')'
+							'transform': 'scale('+scale+')',
+							'-webkit-transform': 'scale('+scale+')',
+							'-moz-transform': 'scale('+scale+')',
+							'-ms-transform': 'scale('+scale+')',
+							'-o-transform': 'scale('+scale+')',
 							//'-webkit-filter': 'grayscale(1)'
 							});
 			},
 			init:function(){
 				//elem.stop();
 				elem.stop();
-				elem.css('z-index',0);
+				//elem.css('z-index',0);
+				elem.css({'left':left+'px',
+							'top':top+'px',
+							'opacity':0.95,
+							'transform': 'scale('+1+')',
+							'-webkit-transform': 'scale('+1+')',
+							'-moz-transform': 'scale('+1+')',
+							'-ms-transform': 'scale('+1+')',
+							'-o-transform': 'scale('+1+')',
+							});
+
+			},
+			zoom:function(){
+				//elem.stop();
+				elem.stop();
+				//elem.css('z-index',0);
 				elem.css({'transform':'scale(1)'});
 				elem.css({'left':left+'px',
 							'top':top+'px',
 							'opacity':0.95,
-							'transform': 'scale('+1+')'
+							'transform': 'scale('+1.1+')',
+							'-webkit-transform': 'scale('+1.1+')',
+							'-moz-transform': 'scale('+1.1+')',
+							'-ms-transform': 'scale('+1.1+')',
+							'-o-transform': 'scale('+1.1+')',
 							});
 
 			},
@@ -55,6 +78,8 @@ var mkob=function(elem,i){
 			$gal.each(function(){
 				if($(this).attr('id')!=a.attr('id'))
 					ob[i].rand();
+				else
+					ob[i].zoom();
 				i++;
 			});
 		});
