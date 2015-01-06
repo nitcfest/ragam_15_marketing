@@ -68,7 +68,7 @@ a{
    text-align:center;
    font-family:Roboto-Thin;
    font-weight:normal;
-   font-size:60px;
+   font-size:4vw;
    color:#20c068;
    -webkit-font-smoothing: antialiased;
    text-shadow: -5px 0px #343946;
@@ -129,7 +129,7 @@ transition: all 0.8s ease;
 	text-align: center;
 	line-height: 35px;
 	font-family: 'Roboto-Thin';
-	font-size: 13px;
+	font-size: 1.4vw;
 	float: left;
 	color:#20c068;
 }
@@ -304,7 +304,7 @@ transition: all 0.8s ease;
 	width: 100%;
 	height:20%;
 	text-align: center;
-	font-size: 20px;
+	font-size: 1.5vw;
 	font-family: 'Raleway-Light';
 	padding:3px 0px 0px 0px;
 	text-decoration: underline;
@@ -315,20 +315,20 @@ transition: all 0.8s ease;
 	height:80%;
 	font-family: 'Raleway-Light';
 	text-align: center;
-	line-height: 30px;
+	line-height: 2vw;
 }
 .body-part-1{
 	width:100%;
 	height:30px;
 	text-align: center;
 	line-height: 30px;
-	font-size: 30px;
+	font-size: 2.2vw;
 }
 .body-part-2{
 	width:100%;
 	height:120px;
 	text-align: center;
-	line-height: 30px;
+	line-height: 2vw;
 }
 
 .body-part-right{
@@ -343,7 +343,7 @@ transition: all 0.8s ease;
 .main-link{
 	color:#20c068;
 	transition: all 0.8s ease;
-	font-size:17px;
+	font-size:1.4vw;
 }
 .main-link:hover{
 	color:#fff !important; 
