@@ -1,6 +1,6 @@
 var $timeline_container=$('#timeline_container');
 var line_width=2;
-var timeline_speed=80;
+var timeline_speed=8;
 var drawline=function(start,type,length,time,div_to_show,callback_data){
   	var id ='c_'+new Date().getTime()
   	var line = "<div id='"+id+"'class='line'>&nbsp;</div>";
@@ -8,37 +8,37 @@ var drawline=function(start,type,length,time,div_to_show,callback_data){
  	$timeline_container.append(line);
  	if(type==='horizontal'){
 		$('#'+id).css({
-		left: start.x+"px",
-		top: start.y+"px",
-		width: 0+"px",
-		height:line_width+"px",
+		left: start.x+"%",
+		top: start.y+"%",
+		width: 0+"%",
+		height:line_width+"%",
 		//position:'absolute',
 		backgroundColor: "#20c068"
 		});
 		var left=length<0?(start.x+length):start.x;
 		if(callback_data){
-			$('#'+id).animate({left:left+"px",width:Math.abs(length)+"px"},time*1000,"linear",function(){if(!clicked){next_detail();} drawline({x:start.x+length,y:start.y},callback_data.type,callback_data.line_length,callback_data.time,callback_data.div,callback_data.callback_data)});
+			$('#'+id).animate({width:Math.abs(length)+"%"},time*1000,"linear",function(){if(!clicked){next_detail();} drawline({x:start.x+length,y:start.y},callback_data.type,callback_data.line_length,callback_data.time,callback_data.div,callback_data.callback_data)});
 		}
 		else{
-			$('#'+id).animate({width:length+"px"},time*1000,"linear",function(){if(!clicked){next_detail();handler=detail_changer();}});
+			$('#'+id).animate({width:length+"%"},time*1000,"linear",function(){if(!clicked){next_detail();handler=detail_changer();}});
 		}
 		show_timeline_div(div_to_show,start.x+length,start.y);
   	}
   	if(type==='vertical'){
 		$('#'+id).css({
-		left: start.x+"px",
-		top: start.y+"px",
-		height: 0+"px",
-		width:line_width+"px",
+		left: start.x+"%",
+		top: start.y+"%",
+		height: 0+"%",
+		width:line_width+"%",
 		//position:'absolute',
 		backgroundColor: "#20c068"
 		});
 		var top=length<0?(start.y+length):start.y;
 		if(callback_data){
-			$('#'+id).animate({top:top+"px",height:Math.abs(length)+"px"},time*1000,"linear",function(){if(!clicked){next_detail()};drawline({x:start.x,y:start.y+length},callback_data.type,callback_data.line_length,callback_data.time,callback_data.div,callback_data.callback_data)});
+			$('#'+id).animate({top:top+"%",height:Math.abs(length)+"%"},time*1000,"linear",function(){if(!clicked){next_detail()};drawline({x:start.x,y:start.y+length},callback_data.type,callback_data.line_length,callback_data.time,callback_data.div,callback_data.callback_data)});
 		}
 		else{
-			$('#'+id).animate({height:length+"px"},time*1000,"linear",function(){if(!clicked){next_detail();handler=detail_changer();}});
+			$('#'+id).animate({height:length+"%"},time*1000,"linear",function(){if(!clicked){next_detail();handler=detail_changer();}});
 		}
 		show_timeline_div(div_to_show,start.x,start.y+length);
   	}
@@ -47,7 +47,7 @@ var timeline_container_width=$timeline_container.width();
 var timeline_container_height=$timeline_container.height();
 
 var data={
-	start:{x:6,y:75},
+	start:{x:.5,y:75},
 	details:[{
 		type:'horizontal',
 		line_length:15,
@@ -83,7 +83,7 @@ var data={
 var show_timeline_div=function(div_to_show,start_x,start_y){
 	var div_width=div_to_show.width();
 	var div_height=div_to_show.height();
-	div_to_show.css({display:"block",left:start_x-div_width/2,top:start_y-div_height/2});
+	div_to_show.css({display:"block",left:"calc("+start_x+"% - "+div_width/2+"px)",top:"calc("+start_y+"% - "+div_height/2+"px)"});
 	div_to_show.addClass("animated bounceIn");
 }
 var draw_animated_lines=function(data){
@@ -91,7 +91,7 @@ var draw_animated_lines=function(data){
 	var details=data.details;
 	var build=details[0];
 	for(i=0;i<details.length;i++){
-		details[i].line_length=details[i].type=='horizontal'?timeline_container_width*(details[i].line_length/100):timeline_container_height*(details[i].line_length/100);
+		//details[i].line_length=details[i].type=='horizontal'?timeline_container_width*(details[i].line_length/100):timeline_container_height*(details[i].line_length/100);
 		if(1||typeof details[i].time==='undefined'){
 			details[i].time=Math.abs(details[i].line_length)/timeline_speed;
 		}

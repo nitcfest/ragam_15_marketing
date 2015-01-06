@@ -3,6 +3,7 @@
 }
 #timeline_container{
 	width:100%;
+	height: 20%;
 	position: absolute;
 	bottom: 10%;
 }
