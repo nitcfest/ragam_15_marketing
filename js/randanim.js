@@ -8,14 +8,14 @@ var mkob=function(elem,i){
 				newleft=Math.random()*400>>0;
 				newtop=Math.random()*200>>0;
 				opacity=Math.random();
-				scale=.75+Math.random()*.25;
+				scale=.55+Math.random()*.25;
 				newwidth=elem.width()*scale;
 				newheight=elem.height()*scale;
 				elem.css('z-index',-1);
 				elem.stop();
 				elem.css({'left':newleft+'px',
 							'top':newtop+'px',
-							'opacity':opacity/3+0.3,
+							'opacity':opacity/3+.2,
 							'transform': 'scale('+scale+')'
 							//'-webkit-filter': 'grayscale(1)'
 							});
@@ -27,7 +27,7 @@ var mkob=function(elem,i){
 				elem.css({'transform':'scale(1)'});
 				elem.css({'left':left+'px',
 							'top':top+'px',
-							'opacity':0.8,
+							'opacity':0.95,
 							'transform': 'scale('+1+')'
 							});
 
