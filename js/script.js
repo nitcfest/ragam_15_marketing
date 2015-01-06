@@ -42,6 +42,8 @@ var top_array=[];
 			temp+=$(this).height();
 		})
 	}
+	var music1_playing=false;
+	var music2_playing=false;
 	$(document).bind('mousewheel DOMMouseScroll keydown',function(event){
 		//event.preventDefault();
 		//event.stopPropagation();
@@ -64,6 +66,32 @@ var top_array=[];
 		else if(event.which==35){
 			move_to_slide(elems-1);
 			return false;
+		}
+		else if(event.which==83){
+			if(music1_playing==false){
+				music1.play();
+				music1_playing=true;
+				music2.pause();
+				music2_playing=false;
+			}
+			else{
+				music1.pause();
+				music1_playing=false;
+			}
+
+		}
+		else if(event.which==66){
+			if(music2_playing==false){
+				music2.play();
+				music2_playing=true;
+				music1.pause();
+				music1_playing=false;
+			}
+			else{
+				music2.pause();
+				music2_playing=false;
+			}
+
 		}
 	})
 	calculate_top_array();
@@ -112,3 +140,5 @@ var top_array=[];
 	$links.click(function(){
 		move_to_slide($(this).data('slide-num'));
 	})
+	var music1 = new Audio('music/music1.mp3');
+	var music2 = new Audio('music/music2.mp3');
