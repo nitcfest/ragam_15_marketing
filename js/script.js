@@ -2,6 +2,8 @@ var top_array=[];
 	var elems=$(".panel").length;
 	var $html_body=$("html, body");
 	current_focus=0;
+	var music1; 
+	var music2;
 	var animation_state=false;
 	var timeline_first_time=true;
 	$links=$(".main-link");
@@ -68,6 +70,8 @@ var top_array=[];
 			return false;
 		}
 		else if(event.which==83){
+			if(!music1||!music2)
+				return false;
 			if(music1_playing==false){
 				music1.play();
 				music1_playing=true;
@@ -81,6 +85,8 @@ var top_array=[];
 
 		}
 		else if(event.which==66){
+			if(!music1||!music2)
+				return false;
 			if(music2_playing==false){
 				music2.play();
 				music2_playing=true;
@@ -143,6 +149,8 @@ var top_array=[];
 		$("#preloader").fadeOut();
 		clearInterval(preloader_handler);
 		move_to_slide(0);
+		music1 = new Audio('music/music1.mp3');
+		music2 = new Audio('music/music2.mp3');
 	}
 	$bgtexture=$("#bgtexture")
 	$(document).mousemove(function(event){
@@ -157,5 +165,3 @@ var top_array=[];
 	$links.click(function(){
 		move_to_slide($(this).data('slide-num'));
 	})
-	var music1 = new Audio('music/music1.mp3');
-	var music2 = new Audio('music/music2.mp3');
