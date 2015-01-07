@@ -101,7 +101,7 @@ var top_array=[];
 	}
 	$bgtexture=$("#bgtexture")
 	$(document).mousemove(function(event){
-		$bgtexture.css({"background-position": -event.pageX/160+"px "+ -event.pageY/160+"px"});
+		$bgtexture.css({"background-position": -event.pageX/80+"px "+ -event.pageY/80+"px"});
 	});
 	$("#panel3 .gal").hover(function(){
 		$background_panel3.css({"background":"url('"+$(this).data('bg')+"') no-repeat center center fixed","-webkit-background-size":"cover","-moz-background-size":"cover","-o-background-size":"cover","background-size":"cover"});
