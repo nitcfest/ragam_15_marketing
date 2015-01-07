@@ -74,8 +74,11 @@
 	width: 46%;
 	font-family: 'Roboto-Thin';
 	margin:2%;
-	text-align: center;
+	text-align: justify;
 	font-size: 1.5vw;
+}
+.timeline_pic>h3{
+	text-align: center;
 }
 .vertical-align{
 	width: 100%;
