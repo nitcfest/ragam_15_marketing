@@ -43,7 +43,7 @@
 }
 #timeline_details{
 	position: relative;
-	width: 74%;
+	width: 76%;
 	height:55%;
 	left:13%;
 	top:10%;
@@ -73,9 +73,14 @@
 	float: left;
 	width: 46%;
 	font-family: 'Roboto-Thin';
-	margin:2%;
+	margin-left:4%;
 	text-align: justify;
 	font-size: 1.5vw;
+}
+@media all and (max-width: 767px) {
+    .timeline_pic{
+		font-size: 3vw;
+    }
 }
 .timeline_pic>h3{
 	text-align: center;
