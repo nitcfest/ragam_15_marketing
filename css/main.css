@@ -311,11 +311,12 @@ transition: all 0.8s ease;
 	font-weight: bold;
 }
 .body-part{
-	width:100%;
+	width:95%;
 	height:80%;
 	font-family: 'Raleway-Light';
-	text-align: center;
-	line-height: 2.5vw;
+	padding: 2.5%;
+	text-align: justify;
+	line-height: 2vw;
 	font-size:1.2vw;
 }
 .body-part-1{
@@ -328,14 +329,12 @@ transition: all 0.8s ease;
 .body-part-2{
 	width:100%;
 	height:120px;
-	text-align: center;
 	line-height: 2vw;
 }
 
 .body-part-right{
 	width:100%;
 	height:120px;
-	text-align: center;
 	line-height: 30px;
 	float: left;
 	padding-top: 15px;
