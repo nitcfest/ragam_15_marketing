@@ -77,7 +77,7 @@ var top_array=[];
 	$(document).bind("swipedown",function(){
 		if(animation_state==true)
 			return false;
-		if(current_focus!=elems-1){
+		if(current_focus!=0){
 			move_to_slide(((current_focus-1)+elems)%elems);
 			return false;
 		}
