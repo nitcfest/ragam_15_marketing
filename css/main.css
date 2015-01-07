@@ -623,6 +623,7 @@ text-align:center;
 	background-size: 60% 60%;
 	bottom: 0px;
 	right:0px;
+	cursor: pointer;
 }
 .arrow-indicator-text{
 	width:110px;
@@ -633,4 +634,5 @@ text-align:center;
 	color:#20c068;
 	bottom: 100px;
 	right:0px;
+	cursor: pointer;
 }

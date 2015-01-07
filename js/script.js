@@ -94,6 +94,7 @@ var top_array=[];
 
 		}
 	})
+	$(".arrow-indicator,.arrow-indicator-text").click(function(){move_to_slide(1);})
 	calculate_top_array();
 	move_to_slide(0);
 	$(".chart_container").hide();
