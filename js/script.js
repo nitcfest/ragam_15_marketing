@@ -46,7 +46,7 @@ var top_array=[];
 		//event.preventDefault();
 		//event.stopPropagation();
 		if(animation_state==true)
-			return;
+			return false;
 	 	if (event.originalEvent.wheelDelta < 0|| event.originalEvent.detail > 0||event.which==34||event.which==39||event.which==40) {
 	 		if(current_focus!=elems-1)
 				move_to_slide((current_focus+1)%elems);
@@ -63,6 +63,22 @@ var top_array=[];
 		}
 		else if(event.which==35){
 			move_to_slide(elems-1);
+			return false;
+		}
+	})
+	$(document).bind("swipeup",function(){
+		if(animation_state==true)
+			return false;
+		if(current_focus!=elems-1){
+			move_to_slide((current_focus+1)%elems);
+			return false;
+		}
+	})
+	$(document).bind("swipedown",function(){
+		if(animation_state==true)
+			return false;
+		if(current_focus!=elems-1){
+			move_to_slide(((current_focus-1)+elems)%elems);
 			return false;
 		}
 	})
