@@ -42,6 +42,8 @@ var top_array=[];
 			temp+=$(this).height();
 		})
 	}
+	var music1_playing=false;
+	var music2_playing=false;
 	$(document).bind('mousewheel DOMMouseScroll keydown',function(event){
 		//event.preventDefault();
 		//event.stopPropagation();
@@ -65,6 +67,32 @@ var top_array=[];
 			move_to_slide(elems-1);
 			return false;
 		}
+		else if(event.which==83){
+			if(music1_playing==false){
+				music1.play();
+				music1_playing=true;
+				music2.pause();
+				music2_playing=false;
+			}
+			else{
+				music1.pause();
+				music1_playing=false;
+			}
+
+		}
+		else if(event.which==66){
+			if(music2_playing==false){
+				music2.play();
+				music2_playing=true;
+				music1.pause();
+				music1_playing=false;
+			}
+			else{
+				music2.pause();
+				music2_playing=false;
+			}
+
+		}
 	})
 	$(document).bind("swipeup",function(){
 		if(animation_state==true)
@@ -82,6 +110,7 @@ var top_array=[];
 			return false;
 		}
 	})
+	$(".arrow-indicator,.arrow-indicator-text").click(function(){move_to_slide(1);})
 	calculate_top_array();
 	move_to_slide(0);
 	$(".chart_container").hide();
@@ -117,7 +146,7 @@ var top_array=[];
 	}
 	$bgtexture=$("#bgtexture")
 	$(document).mousemove(function(event){
-		$bgtexture.css({"background-position": -event.pageX/160+"px "+ -event.pageY/160+"px"});
+		$bgtexture.css({"background-position": -event.pageX/80+"px "+ -event.pageY/80+"px"});
 	});
 	$("#panel3 .gal").hover(function(){
 		$background_panel3.css({"background":"url('"+$(this).data('bg')+"') no-repeat center center fixed","-webkit-background-size":"cover","-moz-background-size":"cover","-o-background-size":"cover","background-size":"cover"});
@@ -128,3 +157,5 @@ var top_array=[];
 	$links.click(function(){
 		move_to_slide($(this).data('slide-num'));
 	})
+	var music1 = new Audio('music/music1.mp3');
+	var music2 = new Audio('music/music2.mp3');
