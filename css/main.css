@@ -594,7 +594,8 @@ text-align:center;
 }
 .background_panel{
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position:center; 
 }
 .border{
 	position: absolute;

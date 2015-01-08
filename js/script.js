@@ -1,6 +1,7 @@
 var top_array=[];
 	var elems=$(".panel").length;
 	var $html_body=$("html, body");
+	var default_pic_url="url(images/bg/default.jpg)";
 	current_focus=0;
 	var music1; 
 	var music2;
@@ -16,8 +17,8 @@ var top_array=[];
 			$(".main-link[data-slide-num='"+2+"']").css({"color":"white"});
 		}
 		if(slide==2||slide==3){
-			$background_panel3.css({"background":""});
-			$background_panel4.css({"background":""});
+			$background_panel3.css({"background-image":default_pic_url});
+			$background_panel4.css({"background-image":default_pic_url});
 		}
 		$(".main-link[data-slide-num='"+slide+"']").css({"color":"white"});
 		$html_body.stop();
@@ -157,10 +158,10 @@ var top_array=[];
 		$bgtexture.css({"background-position": -event.pageX/80+"px "+ -event.pageY/80+"px"});
 	});
 	$("#panel3 .gal").hover(function(){
-		$background_panel3.css({"background":"url('"+$(this).data('bg')+"') no-repeat center center","-webkit-background-size":"cover","-moz-background-size":"cover","-o-background-size":"cover","background-size":"cover"});
+		$background_panel3.css({"background-image":"url('"+$(this).data('bg')+"')"});
 	})
 	$("#panel4 .gal").hover(function(){
-		$background_panel4.css({"background":"url('"+$(this).data('bg')+"') no-repeat center center","-webkit-background-size":"cover","-moz-background-size":"cover","-o-background-size":"cover","background-size":"cover"});
+		$background_panel4.css({"background-image":"url('"+$(this).data('bg')+"')" });
 	})
 	$links.click(function(){
 		move_to_slide($(this).data('slide-num'));
