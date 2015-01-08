@@ -667,3 +667,30 @@ text-align:center;
 	right:0px;
 	cursor: pointer;
 }
+#reason{
+	position: relative;
+	height: 20%;
+	width: 100%;
+}
+#sections{
+	position: relative;
+	margin-left: 5%;
+	background-color:red;
+}
+.section{
+	width: 31%;
+	margin: 1% 1%;
+	position: relative;
+	float: left;
+	background-color: green;
+}
+clear{
+	clear: both;
+	display: block;
+}
+.section_heading{
+	font-weight: bold;
+}
+.section_data_each{
+	background-color: yellow;
+}
