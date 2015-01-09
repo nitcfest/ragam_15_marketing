@@ -23,7 +23,7 @@ var top_array=[];
 		current_focus=slide;
 		$html_body.animate({scrollTop: top_array[current_focus]},function(){animation_state=false;});
 		var animated_divs=$('.panel').eq(current_focus).find('.animated');
-		animated_divs.addClass(function(index){return animated_divs.eq(index).data('anim')||'zoomIn'});
+		animated_divs.addClass(function(index){var animation=animated_divs.eq(index).data('anim');if (a) return a; else return 'zoomIn';});
 		if(timeline_first_time&&slide==1){
 			timeline_first_time=false;
 			draw_animated_lines(data);
@@ -142,7 +142,7 @@ var top_array=[];
 	window.onload=function(){
 		$("#preloader").fadeOut();
 		clearInterval(preloader_handler);
-		move_to_slide(0);
+		move_to_slide(7);
 	}
 	$bgtexture=$("#bgtexture")
 	$(document).mousemove(function(event){
