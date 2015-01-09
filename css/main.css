@@ -667,3 +667,57 @@ text-align:center;
 	right:0px;
 	cursor: pointer;
 }
+/*********************************** Why Sponsor US ******************************************/
+#panel8{
+	width:100%;
+	height:100%;
+	margin:0px auto;
+}
+#section-container{
+	width: 100%;
+	height:80%;
+	margin:0px auto;
+}
+#sections{
+	position: relative;
+	width: 90%;
+	height:80%;
+	margin:0px auto;
+	margin-top:10px;
+	font-family: 'Raleway-Light';
+	color: #20c068;
+}
+.section{
+	width: 31%;
+	margin: 1% 1%;
+	position: relative;
+	float: left;
+}
+clear{
+	clear: both;
+	display: block;
+}
+.section_heading{
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 4px;
+}
+.section_data_each{
+	height:250px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #000000;
+	border:1px solid #000000;
+	background-color: #20c068;
+}
+.section_data_each2{
+	height:150px;
+	margin-top: 2px;
+	font-size: 18px;
+	color: #20c068;
+	border:1px solid #20c068;
+}
+.content-ins{
+	font-size: 1.4vw;
+	text-align: center;
+}
