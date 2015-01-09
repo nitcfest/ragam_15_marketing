@@ -23,7 +23,7 @@ var top_array=[];
 		current_focus=slide;
 		$html_body.animate({scrollTop: top_array[current_focus]},function(){animation_state=false;});
 		var animated_divs=$('.panel').eq(current_focus).find('.animated');
-		animated_divs.addClass(function(index){var animation=animated_divs.eq(index).data('anim');if (a) return a; else return 'zoomIn';});
+		animated_divs.addClass(function(index){var animation=animated_divs.eq(index).data('anim');if (animation) return animation; else return 'zoomIn';});
 		if(timeline_first_time&&slide==1){
 			timeline_first_time=false;
 			draw_animated_lines(data);
@@ -112,7 +112,6 @@ var top_array=[];
 	})
 	$(".arrow-indicator,.arrow-indicator-text").click(function(){move_to_slide(1);})
 	calculate_top_array();
-	move_to_slide(0);
 	$(".chart_container").hide();
 	$(".chart_link").click(function(){
 		$(".chart_link").removeClass("selected");
@@ -142,7 +141,7 @@ var top_array=[];
 	window.onload=function(){
 		$("#preloader").fadeOut();
 		clearInterval(preloader_handler);
-		move_to_slide(7);
+		move_to_slide(0);
 	}
 	$bgtexture=$("#bgtexture")
 	$(document).mousemove(function(event){
@@ -159,3 +158,11 @@ var top_array=[];
 	})
 	var music1 = new Audio('music/music1.mp3');
 	var music2 = new Audio('music/music2.mp3');
+	$(".section_data").hide();
+	$(".section_heading").click(function(){
+		$(".section_heading").removeClass("selected_section_heading");
+		$(this).addClass("selected_section_heading");
+		$(".section_data").hide();
+		$(".section_data").eq($(this).data("section-data-index")).show();
+	});
+	$(".section_heading").eq(0).trigger("click");

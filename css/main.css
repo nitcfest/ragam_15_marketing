@@ -674,11 +674,11 @@ text-align:center;
 	margin:0px auto;
 }
 #section-container{
-	width: 100%;
+	width: 90%;
 	height:80%;
 	margin:0px auto;
 }
-#sections{
+/*#sections{
 	position: relative;
 	width: 90%;
 	height:80%;
@@ -686,21 +686,46 @@ text-align:center;
 	margin-top:10px;
 	font-family: 'Raleway-Light';
 	color: #20c068;
-}
-.section{
+}*/
+/*.section{
 	width: 31%;
 	margin: 1% 1%;
 	position: relative;
 	float: left;
-}
-clear{
+}*/
+/*clear{
 	clear: both;
 	display: block;
+}*/
+.section_headings{
+	width:100%;
+	height: 10%;
 }
 .section_heading{
 	font-size: 22px;
 	text-align: center;
 	margin-bottom: 4px;
+	float: left;
+	width: 33%;
+	color: #000000;
+	height: 100%;
+	border:1px solid #000000;
+	background-color: #20c068;
+}
+.section_heading:hover{
+	cursor: pointer;
+}
+.selected_section_heading{
+	background-color: white;
+}
+.section_datas{
+	width: 100%;
+	height: 90%;
+	position: relative;
+}
+.section_data{
+	position: absolute;
+	width: 100%;
 }
 .section_data_each{
 	height:250px;
