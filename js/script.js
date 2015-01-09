@@ -48,7 +48,7 @@ var top_array=[];
 		//event.preventDefault();
 		//event.stopPropagation();
 		if(animation_state==true)
-			return;
+			return false;
 	 	if (event.originalEvent.wheelDelta < 0|| event.originalEvent.detail > 0||event.which==34||event.which==39||event.which==40) {
 	 		if(current_focus!=elems-1)
 				move_to_slide((current_focus+1)%elems);
@@ -94,6 +94,23 @@ var top_array=[];
 
 		}
 	})
+	$(document).bind("swipeup",function(){
+		if(animation_state==true)
+			return false;
+		if(current_focus!=elems-1){
+			move_to_slide((current_focus+1)%elems);
+			return false;
+		}
+	})
+	$(document).bind("swipedown",function(){
+		if(animation_state==true)
+			return false;
+		if(current_focus!=0){
+			move_to_slide(((current_focus-1)+elems)%elems);
+			return false;
+		}
+	})
+	$(".arrow-indicator,.arrow-indicator-text").click(function(){move_to_slide(1);})
 	calculate_top_array();
 	move_to_slide(0);
 	$(".chart_container").hide();
@@ -129,7 +146,7 @@ var top_array=[];
 	}
 	$bgtexture=$("#bgtexture")
 	$(document).mousemove(function(event){
-		$bgtexture.css({"background-position": -event.pageX/160+"px "+ -event.pageY/160+"px"});
+		$bgtexture.css({"background-position": -event.pageX/80+"px "+ -event.pageY/80+"px"});
 	});
 	$("#panel3 .gal").hover(function(){
 		$background_panel3.css({"background":"url('"+$(this).data('bg')+"') no-repeat center center fixed","-webkit-background-size":"cover","-moz-background-size":"cover","-o-background-size":"cover","background-size":"cover"});
