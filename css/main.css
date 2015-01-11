@@ -26,6 +26,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 	background:#000000;
+	overflow: hidden;
 }
 *{
 	margin:0px;
