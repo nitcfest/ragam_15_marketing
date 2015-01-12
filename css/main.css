@@ -203,103 +203,70 @@ transition: all 0.8s ease;
 	transform:scale(1);
 	transition:all .5s;
 	word-wrap: break-word;
-	margin:0% 0% 0% 3%;
+	margin:6%;
 	padding:0px 0px 0px 0px;
+	height: 45%;
 }
 .top-div{
-	width:100%;
-	height:40%;
+	position: relative;
+	width:33%;
 	margin-top: 10px;
+	float: left;
+	height: 80%;
 }
 #box1{
 	color:#000000;
 	background-color: #2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 #box2{
 	background-color: #252932;
 	opacity:0.6;
 	color:2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 #box3{
 	color:#000000;
 	background-color: #2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 #box4{
 	background-color: #252932;
 	opacity:0.6;
 	color:2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 #box5{
 	color:#000000;
 	background-color: #2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 #box6{
 	background-color: #252932;
 	opacity:0.6;
 	color:2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 #box7{
 	color:#000000;
 	background-color: #2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 #box8{
 	background-color: #252932;
 	opacity:0.6;
 	color:2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 #box9{
 	color:#000000;
 	background-color: #2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 #box10{
 	background-color: #252932;
 	opacity:0.6;
 	color:2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 #box11{
 	color:#000000;
 	background-color: #2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 #box12{
 	background-color: #252932;
 	opacity:0.6;
 	color:2AC570;
-	width:30%;
-	height:90%;
-	float:left;
 }
 .head-part{
 	width: 100%;
@@ -631,25 +598,24 @@ text-align:center;
 #preload1{
 	background: url("");
 }
-#background_panel3{
-	width:100%;
-	height:100%;
-	position:absolute;
+.background_panel{
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
+	background-position:center; 
 }
-#background_panel4{
-	width:100%;
-	height:100%;
-	position:absolute;
+.border{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url("../images/border.png");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 .Ragam-Nav>a:hover{
 	cursor: pointer;
 }
 #preload_images{
-	background:url("../images/bg/4-4.jpg"),url("../images/bg/footfall.jpg"),url("../images/bg/participation.jpg"),url("../images/bg/5.jpg"),url("../images/bg/farhan3.jpg"),url("../images/bg/Impact.jpg"),url("../images/bg/Impact.jpg"),url("../images/bg/rajan-memorial.jpg"),url("../images/bg/takeone.jpg"),url("../images/bg/proshows1.jpg"),url("../images/bg/sneharagam.jpg"),url("../images/bg/5.jpg");
+	background:url("../images/bg/footfall.jpg"),url("../images/bg/05 Participation.jpg"),url("../images/bg/online publi.jpg"),url("../images/bg/06sneharagam.jpg"),url("../images/bg/Impact.jpg"),url("../images/bg/takeone.jpg"),url("../images/bg/03 Proshows II.jpg"),url("../images/bg/04 Media.jpg"),url("../images/bg/takeone.jpg");
 }
 /*********************************** Arrow Indicator *****************************************/
 .arrow-indicator{
@@ -673,6 +639,14 @@ text-align:center;
 	bottom: 100px;
 	right:0px;
 	cursor: pointer;
+}
+clear{
+	clear:both;
+	display: block;
+}
+clear{
+	clear:both;
+	display: block;
 }
 /*********************************** Why Sponsor US ******************************************/
 #panel8{
