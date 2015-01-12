@@ -14,13 +14,13 @@ var top_array=[];
 		$links.css({"color":"#20c068"});
 		//special case for ragam14 link with 2 slides
 		if(slide==3){
-			$(".main-link[data-slide-num='"+2+"']").css({"color":"white"});
+			$(".inside-link[data-slide-num='"+2+"']").css({"color":"white"});
 		}
 		if(slide==2||slide==3){
 			$background_panel3.css({"background-image":default_pic_url});
 			$background_panel4.css({"background-image":default_pic_url});
 		}
-		$(".main-link[data-slide-num='"+slide+"']").css({"color":"white"});
+		$(".inside-link[data-slide-num='"+slide+"']").css({"color":"white"});
 		$html_body.stop();
 		animation_state=true;
 		current_focus=slide;
