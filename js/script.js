@@ -7,7 +7,7 @@ var top_array=[];
 	var music2;
 	var animation_state=false;
 	var timeline_first_time=true;
-	$links=$(".main-link");
+	$links=$(".inside_link");
 	$background_panel3=$("#background_panel3");
 	$background_panel4=$("#background_panel4");
 	var move_to_slide=function(slide){
