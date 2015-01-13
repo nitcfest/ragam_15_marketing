@@ -156,11 +156,15 @@ var top_array=[];
 	$(document).mousemove(function(event){
 		$bgtexture.css({"background-position": -event.pageX/80+"px "+ -event.pageY/80+"px"});
 	});
-	$("#panel3 .gal").hover(function(){
-		$background_panel3.css({"background-image":"url('"+$(this).data('bg')+"')"});
+	$("#panel3 .gal").mouseenter(function(){
+		var $that=$(this);
+		$background_panel3.clearQueue();
+		$background_panel3.delay(100).animate({"opacity":0},function(){$background_panel3.css({"background-image":"url('"+$that.data('bg')+"')"});}).animate({"opacity":1});
 	})
-	$("#panel4 .gal").hover(function(){
-		$background_panel4.css({"background-image":"url('"+$(this).data('bg')+"')" });
+	$("#panel4 .gal").mouseenter(function(){
+		var $that=$(this);
+		$background_panel4.clearQueue();
+		$background_panel4.delay(100).animate({"opacity":0},function(){$background_panel4.css({"background-image":"url('"+$that.data('bg')+"')"});}).animate({"opacity":1});
 	})
 	$links.click(function(){
 		move_to_slide($(this).data('slide-num'));
