@@ -748,8 +748,37 @@ clear{
 	text-align: center;
 	line-height: 24px;
 }
-#why_sponser_us_link{
+.why_sponser_us_link{
+	width:200px;
+	height:30px;
 	position: absolute;
-	top:51%;
-	left: 46%;
+	top:54%;
+	left:69%;
+	margin-top: -15px;
+	margin-left: -100px;
+	font-family: 'Raleway-Light';
+	font-size: 1.6vw !important; 
+	line-height: 30px;
+	text-align: center;
+	color: #20c068;
+}
+.why_sponser_us_link2{
+	width:250px;
+	height:30px;
+	position: absolute;
+	top:54%;
+	left:30%;
+	margin-top: -15px;
+	margin-left: -125px;
+	font-family: 'Raleway-Light';
+	font-size: 1.6vw !important; 
+	line-height: 30px;
+	text-align: center;
+	color: #20c068;
+}
+#size_link{
+	font-size: 2.2vw !important;
+}
+#size_link2{
+	font-size: 2.2vw !important;
 }
