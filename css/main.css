@@ -748,3 +748,8 @@ clear{
 	text-align: center;
 	line-height: 24px;
 }
+#why_sponser_us_link{
+	position: absolute;
+	top:51%;
+	left: 46%;
+}
