@@ -768,6 +768,20 @@ clear{
 	text-align: center;
 	color: #20c068;
 }
+.why_sponser_us_link3{
+	width:200px;
+	height:30px;
+	position: absolute;
+	top:55%;
+	left:50%;
+	margin-top: -15px;
+	margin-left: -100px;
+	font-family: 'Raleway-Light';
+	font-size: 1.6vw !important; 
+	line-height: 30px;
+	text-align: center;
+	color: #20c068;
+}
 .why_sponser_us_link2{
 	width:250px;
 	height:30px;
@@ -787,4 +801,18 @@ clear{
 }
 #size_link2{
 	font-size: 2.2vw !important;
+}
+#info{
+	position: absolute;
+	width:200px;
+	height:200px;
+	top:50%;
+	left:50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	font-family: 'Raleway-Light';
+	text-align: center;
+	font-size: 1.6vw;
+	color: #20c068;
+	line-height: 200px;
 }
