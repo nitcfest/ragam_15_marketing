@@ -302,7 +302,7 @@ transition: all 0.8s ease;
 @media all and (max-width: 767px) {
     .timeline_pic{
 		font-size: 2vh;
-		line-height: 2vh;
+		line-height: 3vh;
     }
     .body-part{
 		font-size:2.2vh;
