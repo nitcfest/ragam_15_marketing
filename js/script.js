@@ -141,9 +141,11 @@ var top_array=[];
 			preloader_text=preloader_text+".";
 	},500)
 	window.onload=function(){
+		music1 = new Audio('music/music1.mp3');
+		music2 = new Audio('music/music2.mp3');
 		$("#preloader").fadeOut();
 		clearInterval(preloader_handler);
-		move_to_slide(0);
+		move_to_slide(8);
 		music1 = new Audio('music/music1.mp3');
 		music2 = new Audio('music/music2.mp3');
 	}
@@ -164,8 +166,6 @@ var top_array=[];
 	$links.click(function(){
 		move_to_slide($(this).data('slide-num'));
 	})
-	var music1 = new Audio('music/music1.mp3');
-	var music2 = new Audio('music/music2.mp3');
 	$(".section_data").hide();
 	$(".section_heading").click(function(){
 		$(".section_heading").removeClass("selected_section_heading");

@@ -816,3 +816,13 @@ clear{
 	color: #20c068;
 	line-height: 200px;
 }
+#map-canvas{
+	width: 70%;
+	height: 75%;
+	top:2%;
+	left: 13%;
+	position: relative;
+}
+#map-canvas a{
+	color:#20c068 !important;
+}
