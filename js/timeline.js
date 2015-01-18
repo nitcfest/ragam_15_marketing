@@ -4,7 +4,6 @@ var timeline_speed=8;
 var drawline=function(start,type,length,time,div_to_show,callback_data){
   	var id ='c_'+new Date().getTime()
   	var line = "<div id='"+id+"'class='line'>&nbsp;</div>";
-  	console.log(length);
  	$timeline_container.append(line);
  	if(type==='horizontal'){
 		$('#'+id).css({
