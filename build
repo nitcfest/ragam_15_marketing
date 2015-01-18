@@ -7,7 +7,7 @@ mkdir "$dir";
 
 #Assets
 grunt;
-cp -r "fonts" "images" "music" "$dir/"
+cp -r "fonts" "images" "music" "raw" "$dir/"
 
 #Asset Renaming
 StylesheetStart='<!-- Stylesheets -->';
