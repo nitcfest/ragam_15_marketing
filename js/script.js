@@ -154,6 +154,10 @@ var top_array=[];
   		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-58561642-1', 'auto');
 		ga('send', 'pageview');
+		$('.hastip1').tooltipsy({offset: [5, 10]});
+		$('.hastip2').tooltipsy({offset: [-10, 10]});
+		$('.hastipnew').tooltipsy({offset: [0, 10]});
+
 		if (!window.mobilecheck()) {
 			music1 = new Audio('music/music1.mp3');
 			music2 = new Audio('music/music2.mp3');		

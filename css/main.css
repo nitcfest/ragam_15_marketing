@@ -431,11 +431,66 @@ text-align:center;
 }
 
 /*********************************Previous Sponsors*********************************/
+#panel7 > .heading {
+	margin-bottom: 50px;
+}
+
+.sponsor-sprite {
+	width: 75px;
+	height: 75px;
+	background: url('../images/sponsors.png') no-repeat top left;
+	display: inline-block;
+	border:1px solid #20c068;
+}
+
+.sponsor-3g{ background-position: 0 0; } 
+.sponsor-aircel{ background-position: 0 -125px; } 
+.sponsor-airtel{ background-position: 0 -250px; } 
+.sponsor-asianet{ background-position: 0 -375px; } 
+.sponsor-asus{ background-position: 0 -500px; } 
+.sponsor-bajaj{ background-position: 0 -625px; } 
+.sponsor-bob{ background-position: 0 -750px; } 
+.sponsor-br{ background-position: 0 -875px; } 
+.sponsor-byjus{ background-position: 0 -1000px; } 
+.sponsor-canon{ background-position: 0 -1125px; } 
+.sponsor-ccd{ background-position: 0 -1250px; } 
+.sponsor-cocacola{ background-position: 0 -1375px; } 
+.sponsor-dell{ background-position: 0 -1500px; } 
+.sponsor-docomo{ background-position: 0 -1625px; } 
+.sponsor-dominos{ background-position: 0 -1750px; } 
+.sponsor-emirates{ background-position: 0 -1875px; } 
+.sponsor-engage{ background-position: -125px 0; } 
+.sponsor-esparsha{ background-position: -125px -125px; } 
+.sponsor-ethihad{ background-position: -125px -250px; } 
+.sponsor-fastrack{ background-position: -125px -375px; } 
+.sponsor-fwd{ background-position: -125px -500px; } 
+.sponsor-gateforum{ background-position: -125px -625px; } 
+.sponsor-itc{ background-position: -125px -750px; } 
+.sponsor-jetairways{ background-position: -125px -875px; } 
+.sponsor-lays{ background-position: -125px -1000px; } 
+.sponsor-levis{ background-position: -125px -1125px; } 
+.sponsor-lg{ background-position: -125px -1250px; } 
+.sponsor-mts{ background-position: -125px -1375px; } 
+.sponsor-nikon{ background-position: -125px -1500px; } 
+.sponsor-nokia{ background-position: -125px -1625px; } 
+.sponsor-pnb{ background-position: -125px -1750px; } 
+.sponsor-rosebowl{ background-position: -125px -1875px; } 
+.sponsor-samsung{ background-position: -250px 0; } 
+.sponsor-sbi{ background-position: -250px -125px; } 
+.sponsor-sbt{ background-position: -250px -250px; } 
+.sponsor-tata{ background-position: -250px -375px; } 
+.sponsor-time{ background-position: -250px -500px; } 
+.sponsor-twist{ background-position: -250px -625px; } 
+.sponsor-vodafone{ background-position: -250px -750px; } 
+.sponsor-week{ background-position: -250px -875px; } 
+
+
 .sponsor-list{
 	width:100%;
 	height:12%;
 	margin-left:3%;
 	padding:0px 10px 0px 10px;
+	margin-bottom: 20px;
 }
 .sponsor-list ul{
 	width: 90%;
@@ -447,15 +502,6 @@ text-align:center;
 	height:100%;
 	float:left;
 	padding-left: 10px;
-}
-.sponsor-list li img{
-	max-width:100%;
-	max-height:100%;
-	border:1px solid #20c068;
-}
-.break-point{
-	width:100%;
-	height:4%;
 }
 
 /***********************Chart*****************************/
