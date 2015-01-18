@@ -1,0 +1,43 @@
+#!/bin/bash
+
+dir='release';
+rm -rf "$dir";
+mkdir "$dir";
+
+
+#Assets
+grunt;
+cp -r "fonts" "images" "music" "$dir/"
+
+#Asset Renaming
+StylesheetStart='<!-- Stylesheets -->';
+StylesheetEnd='<!-- End Of Stylesheets -->';
+JSStart='<!-- Local JS -->';
+JSSEnd='<!-- End Of JS -->';
+
+t=`grep -n "$StylesheetStart" index.html | cut -f1 -d: | head -1`;
+t=`expr $t - 1`;
+p="1,$t"p;
+sed -n "$p" < index.html > "$dir/index.html"
+echo '<link rel="stylesheet" href="css/c.css" type="text/css"/>' >> "$dir/index.html";
+
+t=`grep -n "$StylesheetEnd" index.html | cut -f1 -d: | head -1`;
+t=`expr $t + 1`;
+u=`grep -n "$JSStart" index.html | cut -f1 -d: | head -1`;
+u=`expr $u - 1`;
+p="$t,$u"p;
+sed -n "$p" < index.html >> "$dir/index.html";
+echo '<script src="js/j.js"></script>' >> "$dir/index.html";
+
+t=`grep -n "$JSSEnd" index.html | cut -f1 -d: | head -1`;
+t=`expr $t + 1`;
+u=`cat index.html | wc -l`;
+u=`expr $u + 1`;
+p="$t,$u"p;
+sed -n "$p" < index.html >> "$dir/index.html";
+
+
+
+#Cleanup
+rm "$dir/css/c.unmin.css" "$dir/js/j.unmin.js";
+git add "$dir"
