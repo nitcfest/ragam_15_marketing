@@ -28,10 +28,23 @@ module.exports = function(grunt) {
 	            }	
 	        }
     	},
+    	htmlmin: {
+    		build: {
+      			options: {
+        			removeComments: true,
+        			collapseWhitespace: true
+      			},
+      			files: {
+        			'release/index.html': 'release/index.html'
+      			}
+    		}
+    	}
 	});
 	
 	grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.registerTask('default', [ 'concat:css', 'cssmin:css', 'concat:js', 'uglify:js' ]);    
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+
+    grunt.registerTask('default', [ 'concat:css', 'cssmin:css', 'concat:js', 'uglify:js', 'htmlmin:build' ]);    
 }

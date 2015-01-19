@@ -5,10 +5,6 @@ rm -rf "$dir";
 mkdir "$dir";
 
 
-#Assets
-grunt;
-cp -r "fonts" "images" "music" "raw" "$dir/"
-
 #Asset Renaming
 StylesheetStart='<!-- Stylesheets -->';
 StylesheetEnd='<!-- End Of Stylesheets -->';
@@ -36,6 +32,10 @@ u=`expr $u + 1`;
 p="$t,$u"p;
 sed -n "$p" < index.html >> "$dir/index.html";
 
+
+#Assets
+grunt;
+cp -r "fonts" "images" "music" "raw" "$dir/"
 
 
 #Cleanup
